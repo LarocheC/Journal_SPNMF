@@ -510,7 +510,7 @@ Finally in \cite{kim2011nonnegative}, drum source separation is done using a non
 
 In this section we present our semi-supervised algorithm for harmonic/percussive source separation.
 
-\subsection{Presentation of orthogonal and projective NMF}\label{subsec:PNMF}
+\subsection{Presentation of the orthogonal and projective NMF}\label{subsec:PNMF}
 
 
 Using a squared Euclidean distance between the data matrix $V$ and its approximation $WH$, the NMF problems reads:
@@ -530,7 +530,7 @@ Another very similar approach is the ONMF \cite{choi}. It consists in solving th
 \begin{align}
 \min_{W \geqslant 0, H \geqslant0} ||V - WH||^2 \quad   \text{s.t}.\quad W^{T}W=I_{k} 
 \end{align}%
-In this method, orthogonality between nonnegative basis functions is enforced during the optimization process. In practice, it seems that PNMF and ONMF lead to similar decompositions, as the $W$ matrix estimated by PNMF is almost orthogonal (i.e., $\|W^{T}W-I_{k}\|^{2}$ is small). However, enforcing the orthogonality between the base at every iteration is too strong of a constraint for audio signal \cite{laroche2015structured}. 
+In this method, orthogonality between nonnegative basis functions is enforced during the optimization process. In practice, it seems that PNMF and ONMF lead to similar decompositions, as the $W$ matrix estimated by PNMF is almost orthogonal (i.e., $\|W^{T}W-I_{k}\|^{2}$ is small). However, enforcing the orthogonality between the base at every iteration is a constraint too strong to decompose audio signal \cite{laroche2015structured}. 
 
 The sparsity of the dictionary matrix is an interesting property for the decomposition of audio signals and especially for the decomposition of harmonic instruments with very localized harmonic spectra. Contrary to the NMF, the sparsity of PNMF and is an inherent features of the decomposition. These key properties of PNMF motivated us to decompose the harmonic instruments with the orthogonal basis functions.
 
@@ -748,7 +748,7 @@ For the rest of the article, we will use the SPNMF algorithm with the IS diverge
 \subsection{Influence of the dictionary}\label{setup:dictionary}
 
 We now discuss the influence of the dictionary. We tried the two methods described in section \ref{fixedict} and a third dictionary is made by the concatenation of the two dictionaries. The more information contained is the dictionary, the more chance for the decomposition to properly extract the percussive part. On some signals the decomposition is not able to extract a lot of energy from the mixture as no atoms from the dictionary correspond to an atom of the percussive signal.
-We display on the Figure \ref{resultsDict} the SDR results of the decomposition using the NMF dictionary, the STFT dictionary and the concatenated dictionary. The SAR and SIR are in the annexe at \ref{resultsDictSAR} and \ref{resultsDictSIR} respectively. On our tests, the results with the concatenated dictionary have the highest score. Indeed the concatenated dictionary contains the largest amount of information and as a result, obtains the best separation. As the dictionary is fixed it is important to have a large dictionary to extract a large type of percussive instruments. For the tests we will conduct later in Section \ref{sec:stateoftheart} on a large database, we will use the concatenated dictionary as it contains the largest amount of information. 
+We display on the Figure \ref{resultsDict} the SDR results of the decomposition using the NMF dictionary, the STFT dictionary and the concatenated dictionary. The SAR and SIR are in the annexe at \ref{resultsDictSAR} and \ref{resultsDictSIR} respectively. On our tests, the results with the concatenated dictionary have the highest score. Indeed the concatenated dictionary contains the largest amount of information and as a result, obtains the best separation. As the dictionary is fixed it is important to have a large dictionary to extract a large type of percussive instruments. The STFT dictionary and the NMF dictionary obtain similar results. Each dictionary contain complementary information that allow for a better separation well they are concatenated. For the tests we will conduct later in Section \ref{sec:stateoftheart} on a large database, we will use the concatenated dictionary as it contains the largest amount of information. 
 
 
 \begin{figure}[htb]

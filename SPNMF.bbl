@@ -128,6 +128,11 @@ A.~Klapuri, ``Multipitch analysis of polyphonic music and speech signals using
   an auditory model,'' \emph{IEEE Transactions on Audio, Speech, and Language
   Processing.}, vol.~16, no.~2, pp. 255--266, 2008.
 
+\bibitem{eronen2000musical}
+A.~Anti.~Eronen and A.~Klapuri, ``Musical instrument recognition using cepstral
+  coefficients and temporal features,'' in \emph{Proc. of IEEE ICASSP},
+  vol.~2.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2000, pp. II753--II756.
+
 \bibitem{salamon2012melody}
 J.~Salamon and E.~G{\'o}mez, ``Melody extraction from polyphonic music signals
   using pitch contour characteristics,'' \emph{Transactions on Audio, Speech,
@@ -174,6 +179,10 @@ D.~Lee and S.~Seung, ``Algorithms for non-negative matrix factorization,''
 \bibitem{gillet2006enst}
 O.Gillet and G.Richard, ``Enst-drums: an extensive audio-visual database for
   drum signals processing.'' in \emph{Proc. of ISMIR}, 2006, pp. 156--159.
+
+\bibitem{liutkus:hal-01110028}
+A.~Liutkus and R.~Badeau, ``{Generalized Wiener filtering with fractional power
+  spectrograms},'' in \emph{{Proc. of IEEE ICASSP}}, 2015.
 
 \bibitem{fevotte2009nonnegative}
 C.~F{\'e}votte, N.~Bertin, and JL.Durrieu, ``Nonnegative matrix factorization

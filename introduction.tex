@@ -12,26 +12,24 @@ Concurrently, other unsupervised methods aim at underlining some mathematical pr
 The main advantage of these approaches compared to other unsupervised methods is that sparsity or orthogonality is obtained as intrinsic properties, so they avoid a tedious and often unsatisfactory hyperparameter tuning stage. However, these approaches do not have a sufficient flexibility to properly represent the complexity of an audio scene composed of multiple and concurrent harmonic and percussive sources.
 
 
-Finally some methods use a so-called semi-supervised algorithm where data from scores helps the constrained decomposition method~\cite{hennequin2011score,fritsch2013score} {\MK Je pense que ce paragraphe peut √™tre supprim√©: il n'en dit pas assez, et je ne suis pas s√ªr qu'il soit n√©cessaire de d√©velopper. Ou alors, il faut l'int√©grer au paragraphe suivant qui parle de technique semi-supervis√©e. Mais la, il me parait un peu esseul\'e.} {\HP OK pour l'intégrer à la suite. Definir méthode semi-supervisee, citer comme exemple celles [15,16] et dire pourquoi celle proposée rentre dans cette categorie.}
+%Finally some methods use a so-called semi-supervised algorithm where data from scores helps the constrained decomposition method~\cite{hennequin2011score,fritsch2013score} %{\MK Je pense que ce paragraphe peut √™tre supprim√©: il n'en dit pas assez, et je ne suis pas s√ªr qu'il soit n√©cessaire de d√©velopper. Ou alors, il faut l'int√©grer au paragraphe suivant qui parle de technique semi-supervis√©e. Mais la, il me parait un peu esseul\'e.} {\HP OK pour l'intégrer à la suite. Definir méthode semi-supervisee, citer comme exemple celles [15,16] et dire pourquoi celle proposée rentre dans cette categorie.}
 
 
 In this article, we propose a semi-supervised decomposition technique suitable for harmonic/percussive source separation of non vocal monophonic instrumental signals. The method takes advantage of the sparse decomposition of PNMF but allows a better representation of complex audio signals. More precisely, the initial nearly-orthogonal decomposition obtained by PNMF is extended by non-orthogonal components that reveal to be particularly relevant to represent percussive or transient signals. The sparse and orthogonal components of the PNMF are prone to extract the harmonic instruments well localized in frequency, while the percussive part with flat spectra are extracted by the NMF components. However, as shown in~\cite{laroche2015structured} this direct approach obtains limited performances in a blind source separation task. In the present article, to force the non-orthogonal components to extract the drum signal, we use a dictionary specific to drum signals using the same technique as in~\cite{wudrum}.
-The merit of this new method termed \textit{Structured Projected Nonnegative Matrix Factorization (SPNMF)} is experimentally demonstrated on synthetic signals and on a specific task of percussive/harmonic source separation of real audio signals. It has several characteristics which make it stand apart from previous work. Firstly the method is easy to tune as it has few parameters. Secondly it is robust to the wide variety of audio signal and perform well on genre specific signal. The main contributions of this article are :
-\begin{description}
-\item[$\bullet$ ] A comparison between different two training methods to establish the best drum dictionary.
-\item[$\bullet$ ] A Benchmark against three state of the art harmonic/percussive methods on a large database.
-\end{description}
-{\MK dans les contributions, il faut mettre la m√©thode SPNMF en elle-meme. Meme si elle apparait deja dans Eusipco. C'est le coeur de l'article. Je mettrais un truc du genre (√† d√©velopper):
-
-
+%The merit of this new method termed \textit{Structured Projected Nonnegative Matrix Factorization (SPNMF)} is experimentally demonstrated on synthetic signals and on a specific task of percussive/harmonic source separation of real audio signals. It has several characteristics which make it stand apart from previous work. Firstly the method is easy to tune as it has few parameters. Secondly it is robust to the wide variety of audio signal and perform well on genre specific signal. The main contributions of this article are :
+%\begin{description}
+%\item[$\bullet$ ] A comparison between different two training methods to establish the best drum dictionary.
+%\item[$\bullet$ ] A Benchmark against three state of the art harmonic/percussive methods on a large database.
+%\end{description}
+%{\MK dans les contributions, il faut mettre la m√©thode SPNMF en elle-meme. Meme si elle apparait deja dans Eusipco. C'est le coeur de l'article. Je mettrais un truc du genre (√† d√©velopper):
 The contribution of this article are threefold
 \begin{enumerate}
-\item The SPNMF method is introduced, as well as a simple multiplicative algorithm to solve the SPNMF problem. Eventuellement souligner que le modele est etendu a diverses mesures de divergences
-\item A comparison etc.
-\item A benchmark etc.	
+\item The SPNMF method is introduced, as well as a simple multiplicative algorithm to solve the SPNMF problem.
+\item  A comparison between different two training methods to establish the best drum dictionary.
+\item A Benchmark against three state of the art harmonic/percussive methods on a large database.	
 \end{enumerate}
 
-}
+%}
 
 The paper is organized as follows. In Section~\ref{sec:Background}, we describe the problem of harmonic/percussive source separation and we detail some recent state of the art methods. The proposed SPNMF is then introduced in Section~\ref{sec:SPNMF}. We present our experimental protocol and the results obtained on synthetic and real audio signals in Section~\ref{sec:experiments}. Section~\ref{sec:stateoftheart} is a benchmark with state of the art methods. Finally, some conclusions are drawn in Section~\ref{sec:conc}.
 

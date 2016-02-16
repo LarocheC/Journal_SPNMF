@@ -1,56 +1,13 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: ./SPNMF.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: SPNMF.aux
 The style file: IEEEtran.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: reference.bib
+Repeated entry---line 178 of file reference.bib
+ : @inproceedings{eronen2000musical
+ :                                 ,
+I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 37 entries,
-            4039 wiz_defined-function locations,
-            1014 strings with 13669 characters,
-and the built_in function-call counts, 28191 in all, are:
-= -- 2236
-> -- 631
-< -- 240
-+ -- 365
-- -- 104
-* -- 1321
-:= -- 4143
-add.period$ -- 77
-call.type$ -- 37
-change.case$ -- 36
-chr.to.int$ -- 555
-cite$ -- 37
-duplicate$ -- 2045
-empty$ -- 2417
-format.name$ -- 134
-if$ -- 6618
-int.to.chr$ -- 0
-int.to.str$ -- 37
-missing$ -- 344
-newline$ -- 134
-num.names$ -- 37
-pop$ -- 801
-preamble$ -- 1
-purify$ -- 0
-quote$ -- 2
-skip$ -- 2252
-stack$ -- 0
-substring$ -- 1330
-swap$ -- 1630
-text.length$ -- 55
-text.prefix$ -- 0
-top$ -- 5
-type$ -- 37
-warning$ -- 0
-while$ -- 119
-width$ -- 39
-write$ -- 372
+(There was 1 error message)

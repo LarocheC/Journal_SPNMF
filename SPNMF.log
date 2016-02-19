@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.2)  16 FEB 2016 14:40
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=latex 2014.3.19)  19 FEB 2016 16:28
 entering extended mode
 **SPNMF.tex
 (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\SPNMF.tex
@@ -30,7 +30,7 @@ LaTeX Font Info:    Try loading font information for OT1+ptm on input line 458.
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
--- Using PDF output.
+-- Using DVI output.
 \@IEEEnormalsizeunitybaselineskip=\dimen105
 -- This is a 10 point document.
 \CLASSINFOnormalsizebaselineskip=\dimen106
@@ -180,18 +180,13 @@ Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
+Package color Info: Driver file: dvips.def on input line 130.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\dvips.def"
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count98
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen131
@@ -204,10 +199,10 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigbottomskip=\skip60
 \subfigcapmargin=\dimen133
 \subfiglabelskip=\skip61
-\c@subfigure=\count99
-\c@lofdepth=\count100
-\c@subtable=\count101
-\c@lotdepth=\count102
+\c@subfigure=\count98
+\c@lofdepth=\count99
+\c@subtable=\count100
+\c@lotdepth=\count101
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -251,7 +246,7 @@ ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
 ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
 \else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
 \fi .
-\c@ContinuedFloat=\count103
+\c@ContinuedFloat=\count102
 Package caption Info: subfigure package is loaded.
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
@@ -259,12 +254,18 @@ Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
 Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
-))
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
 
@@ -288,12 +289,12 @@ Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
 )
 
 Package epstopdf Warning: No graphics package `graphic{s,x}' loaded.
@@ -310,14 +311,14 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: dvips.def on input line 91.
 )
 \Gin@req@height=\dimen140
 \Gin@req@width=\dimen141
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count104
+\c@float@type=\count103
 \float@exts=\toks16
 \float@box=\box35
 \@float@everytoks=\toks17
@@ -343,13 +344,13 @@ Package: amsbsy 1999/11/29 v1.2d
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count105
+\inf@bad=\count104
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count106
-\leftroot@=\count107
+\uproot@=\count105
+\leftroot@=\count106
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count108
-\DOTSCASE@=\count109
+\classnum@=\count107
+\DOTSCASE@=\count108
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
@@ -358,15 +359,15 @@ LaTeX Info: Redefining \cdots on input line 467.
 \big@size=\dimen144
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count110
-\c@MaxMatrixCols=\count111
+\macc@depth=\count109
+\c@MaxMatrixCols=\count110
 \dotsspace@=\muskip10
-\c@parentequation=\count112
-\dspbrk@lvl=\count113
+\c@parentequation=\count111
+\dspbrk@lvl=\count112
 \tag@help=\toks19
-\row@=\count114
-\column@=\count115
-\maxfields@=\count116
+\row@=\count113
+\column@=\count114
+\maxfields@=\count115
 \andhelp@=\toks20
 \eqnshift@=\dimen145
 \alignsep@=\dimen146
@@ -397,7 +398,7 @@ Package: enumitem 2011/08/06 v3.4 Customized lists
 \enit@outerparindent=\dimen151
 \enit@toks=\toks23
 \enit@inbox=\box39
-\enitdp@description=\count117
+\enitdp@description=\count116
 )
 (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\SPNMF.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
@@ -414,24 +415,10 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
 
 -- Lines per column: 58 (exact).
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
-\scratchdimen=\dimen152
-\scratchbox=\box40
-\nofMPsegments=\count119
-\nofMParguments=\count120
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count121
-\MPscratchDim=\dimen153
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
-\everyMPtoPDFconversion=\toks25
-)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
- (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\introduction.tex
+(C:\Users\laroche\Documents\GitHub\Journal_SPNMF\introduction.tex
 LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -441,7 +428,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+) [1
 
 
 ]
@@ -458,109 +445,58 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Missing character: There is no Ã in font ptmr7t!
-Missing character: There is no © in font ptmr7t!
 ) (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\validation.tex [4]
-<fig/synthetictestspectrogram.png, id=30, 1446.15282pt x 784.43062pt>
-File: fig/synthetictestspectrogram.png Graphic file (type png)
+File: fig/synthetictestspectrogram.eps Graphic file (type eps)
 
-<use fig/synthetictestspectrogram.png>
-Package pdftex.def Info: fig/synthetictestspectrogram.png used on input line 19
-.
-(pdftex.def)             Requested size: 256.0748pt x 138.89328pt.
-
+<fig/synthetictestspectrogram.eps>
 Overfull \hbox (4.0748pt too wide) in paragraph at lines 19--21
  [][] 
  []
 
-<fig/WHcomp.png, id=31, 1284.8pt x 613.29124pt>
-File: fig/WHcomp.png Graphic file (type png)
- <use fig/WHcomp.png>
-Package pdftex.def Info: fig/WHcomp.png used on input line 28.
-(pdftex.def)             Requested size: 426.79134pt x 203.72493pt.
-
-<fig/RankOfFact.png, id=32, 964.35281pt x 482.55281pt>
-File: fig/RankOfFact.png Graphic file (type png)
-
-<use fig/RankOfFact.png>
-Package pdftex.def Info: fig/RankOfFact.png used on input line 63.
-(pdftex.def)             Requested size: 256.0748pt x 128.13359pt.
-
+File: fig/WHcomp.eps Graphic file (type eps)
+<fig/WHcomp.eps>
+File: fig/RankOfFact.eps Graphic file (type eps)
+ <fig/RankOfFact.eps>
 Overfull \hbox (4.0748pt too wide) in paragraph at lines 63--65
  [][] 
  []
 
-[5 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/synthetictestspectrogra
-m.png (PNG copy)> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/RankOfFa
-ct.png (PNG copy)>]
-<fig/DivergenceFrame1024.png, id=36, 964.35281pt x 514.92375pt>
-File: fig/DivergenceFrame1024.png Graphic file (type png)
-
-<use fig/DivergenceFrame1024.png>
-Package pdftex.def Info: fig/DivergenceFrame1024.png used on input line 89.
-(pdftex.def)             Requested size: 256.0748pt x 136.72914pt.
-
+[5]
+File: fig/DivergenceFrame1024.eps Graphic file (type eps)
+ <fig/DivergenceFrame1024.eps>
 Overfull \hbox (4.0748pt too wide) in paragraph at lines 89--91
  [][] 
  []
 
-<fig/DivergenceFrame2048.png, id=37, 964.35281pt x 514.92375pt>
-File: fig/DivergenceFrame2048.png Graphic file (type png)
-
-<use fig/DivergenceFrame2048.png>
-Package pdftex.def Info: fig/DivergenceFrame2048.png used on input line 99.
-(pdftex.def)             Requested size: 256.0748pt x 136.72914pt.
-
+File: fig/DivergenceFrame2048.eps Graphic file (type eps)
+<fig/DivergenceFrame2048.eps>
 Overfull \hbox (4.0748pt too wide) in paragraph at lines 99--101
  [][] 
  []
 
 
-Underfull \vbox (badness 1077) has occurred while \output is active []
+Underfull \vbox (badness 5954) has occurred while \output is active []
 
- [6 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/WHcomp.png (PNG copy)>
- <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/DivergenceFrame1024.png (
-PNG copy)> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/DivergenceFrame
-2048.png (PNG copy)>] <fig/DictSDR.png, id=41, 964.35281pt x 482.55281pt>
-File: fig/DictSDR.png Graphic file (type png)
+ [6]
+File: fig/DictSDR.eps Graphic file (type eps)
 
-<use fig/DictSDR.png>
-Package pdftex.def Info: fig/DictSDR.png used on input line 117.
-(pdftex.def)             Requested size: 227.62204pt x 113.90062pt.
-)
-(C:\Users\laroche\Documents\GitHub\Journal_SPNMF\benchmark.tex
-<fig/DatabaseSDR.png, id=42, 1284.8pt x 613.29124pt>
-File: fig/DatabaseSDR.png Graphic file (type png)
- <use fig/DatabaseSDR.png>
-Package pdftex.def Info: fig/DatabaseSDR.png used on input line 39.
-(pdftex.def)             Requested size: 256.0748pt x 122.23495pt.
+<fig/DictSDR.eps>)
+(C:\Users\laroche\Documents\GitHub\Journal_SPNMF\benchmark.tex [7]
+File: fig/DatabaseSDR.eps Graphic file (type eps)
 
+<fig/DatabaseSDR.eps>
 Overfull \hbox (4.0748pt too wide) in paragraph at lines 39--41
  [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<fig/DatabaseSIR.png, id=44, 1284.8pt x 613.29124pt>
-File: fig/DatabaseSIR.png Graphic file (type png)
- <use fig/DatabaseSIR.png>
-Package pdftex.def Info: fig/DatabaseSIR.png used on input line 48.
-(pdftex.def)             Requested size: 256.0748pt x 122.23495pt.
-
+File: fig/DatabaseSIR.eps Graphic file (type eps)
+<fig/DatabaseSIR.eps>
 Overfull \hbox (4.0748pt too wide) in paragraph at lines 48--50
  [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<fig/DatabaseSAR.png, id=45, 1284.8pt x 613.29124pt>
-File: fig/DatabaseSAR.png Graphic file (type png)
- <use fig/DatabaseSAR.png>
-Package pdftex.def Info: fig/DatabaseSAR.png used on input line 57.
-(pdftex.def)             Requested size: 256.0748pt x 122.23495pt.
-
+File: fig/DatabaseSAR.eps Graphic file (type eps)
+<fig/DatabaseSAR.eps>
 Overfull \hbox (4.0748pt too wide) in paragraph at lines 57--59
  [][] 
  []
@@ -568,97 +504,51 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 57--59
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/DictSDR.png (PNG copy)>
-] <fig/ElectroFusionSDR.png, id=50, 1284.8pt x 613.29124pt>
-File: fig/ElectroFusionSDR.png Graphic file (type png)
-
-<use fig/ElectroFusionSDR.png>
-Package pdftex.def Info: fig/ElectroFusionSDR.png used on input line 86.
-(pdftex.def)             Requested size: 256.0748pt x 122.23495pt.
-
+File: fig/ElectroFusionSDR.eps Graphic file (type eps)
+<fig/ElectroFusionSDR.eps>
 Overfull \hbox (4.0748pt too wide) in paragraph at lines 86--88
  [][] 
  []
 
-[8 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/DatabaseSDR.png> <C:/Us
-ers/laroche/Documents/GitHub/Journal_SPNMF/fig/DatabaseSIR.png> <C:/Users/laroc
-he/Documents/GitHub/Journal_SPNMF/fig/DatabaseSAR.png> <C:/Users/laroche/Docume
-nts/GitHub/Journal_SPNMF/fig/ElectroFusionSDR.png>])
-(C:\Users\laroche\Documents\GitHub\Journal_SPNMF\conclusion.tex)
+[8]) (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\conclusion.tex)
 (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\appendix.tex [9]
-<fig/DictSAR.png, id=62, 964.35281pt x 482.55281pt>
-File: fig/DictSAR.png Graphic file (type png)
- <use fig/DictSAR.png>
-Package pdftex.def Info: fig/DictSAR.png used on input line 77.
-(pdftex.def)             Requested size: 227.62204pt x 113.90062pt.
+File: fig/DictSAR.eps Graphic file (type eps)
 
-<fig/DictSIR.png, id=63, 964.35281pt x 482.55281pt>
-File: fig/DictSIR.png Graphic file (type png)
- <use fig/DictSIR.png>
-Package pdftex.def Info: fig/DictSIR.png used on input line 83.
-(pdftex.def)             Requested size: 227.62204pt x 113.90062pt.
-
-<fig/ElectroFusionSIR.png, id=64, 964.35281pt x 482.55281pt>
-File: fig/ElectroFusionSIR.png Graphic file (type png)
-
-<use fig/ElectroFusionSIR.png>
-Package pdftex.def Info: fig/ElectroFusionSIR.png used on input line 92.
-(pdftex.def)             Requested size: 256.0748pt x 128.13359pt.
-
+<fig/DictSAR.eps>
+File: fig/DictSIR.eps Graphic file (type eps)
+ <fig/DictSIR.eps>
+File: fig/ElectroFusionSIR.eps Graphic file (type eps)
+ <fig/ElectroFusionSIR.eps>
 Overfull \hbox (4.0748pt too wide) in paragraph at lines 92--93
  [][] 
  []
 
-<fig/ElectroFusionSAR.png, id=65, 964.35281pt x 482.55281pt>
-File: fig/ElectroFusionSAR.png Graphic file (type png)
-
-<use fig/ElectroFusionSAR.png>
-Package pdftex.def Info: fig/ElectroFusionSAR.png used on input line 98.
-(pdftex.def)             Requested size: 256.0748pt x 128.13359pt.
-
+File: fig/ElectroFusionSAR.eps Graphic file (type eps)
+<fig/ElectroFusionSAR.eps>
 Overfull \hbox (4.0748pt too wide) in paragraph at lines 98--99
  [][] 
  []
 
-) (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\SPNMF.bbl [10 <C:/Users/laro
-che/Documents/GitHub/Journal_SPNMF/fig/DictSAR.png (PNG copy)> <C:/Users/laroch
-e/Documents/GitHub/Journal_SPNMF/fig/DictSIR.png (PNG copy)> <C:/Users/laroche/
-Documents/GitHub/Journal_SPNMF/fig/ElectroFusionSIR.png> <C:/Users/laroche/Docu
-ments/GitHub/Journal_SPNMF/fig/ElectroFusionSAR.png>]
+)
+Underfull \vbox (badness 7869) has occurred while \output is active []
+
+ [10]
+(C:\Users\laroche\Documents\GitHub\Journal_SPNMF\SPNMF.bbl
 Underfull \hbox (badness 1584) in paragraph at lines 110--114
 []\OT1/ptm/m/n/8 G. Peeters, ``Au-to-matic clas-si-fi-ca-tion of large mu-si-ca
 l in-stru-ment
  []
 
-) [11] (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\SPNMF.aux) ) 
+) [11] [12
+
+] (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\SPNMF.aux) ) 
 Here is how much of TeX's memory you used:
- 6025 strings out of 494045
- 92650 string characters out of 3148382
- 183310 words of memory out of 3000000
- 9200 multiletter control sequences out of 15000+200000
- 40270 words of font info for 75 fonts, out of 3000000 for 9000
+ 5685 strings out of 494046
+ 88067 string characters out of 3148404
+ 173262 words of memory out of 3000000
+ 8876 multiletter control sequences out of 15000+200000
+ 27055 words of font info for 63 fonts, out of 3000000 for 9000
  718 hyphenation exceptions out of 8191
  42i,13n,38p,1730b,396s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program
- Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/time
-s/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on SPNMF.pdf (11 pages, 404881 bytes).
-PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+Output written on SPNMF.dvi (12 pages, 83688 bytes).

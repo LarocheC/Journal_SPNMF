@@ -1,14 +1,14 @@
 \section{Experimental Validation of SPNMF}
 \label{sec:experiments}
 
-In this section we conduct experiments to understand the behaviour of the proposed method. We first perform a test on a synthetic signal to validate the model of SPNMF in Section~\ref{SynthTest}. We then set-up the SPNMF to perform efficient source separation by quantifying the influence of the rank of factorization in Section~\ref{setup:rank}, the effect of different divergence in  Section~\ref{setup:divergence} and finally the performance of the separation with different types of dictionaries in  Section~\ref{setup:dictionary}.
+In this section we conduct a set of experiments to assess the merits of the proposed method. We first perform a test on a synthetic signal to validate the model of SPNMF in section~\ref{SynthTest}. We then set-up the SPNMF to perform efficient source separation by quantifying the influence of the rank of factorization in section~\ref{setup:rank}, the effect of different divergences in section~\ref{setup:divergence} and finally the performance of the separation with different types of dictionaries in section~\ref{setup:dictionary}.
 
 
 \subsection{Synthetic Tests}\label{SynthTest}
 
-To illustrate how the SPNMF works without dictionary, we use a simple synthetic signal. The test signal models a mix of harmonic and percussive instruments. The harmonic part is simulated by a sum of sine waves that overlap in time and frequency. The first signal simulates a $C(3)$ with fundamental frequency $f_0 = 131$~Hz, the other one a $B(4)$ with $f_0 = 492$~Hz. To simulate the percussive part, we add $0.1$~s of Gaussian white noise for the first two second. For the last two seconds, we add $0.3$~s of Gaussian white noise filtered by a high-pass filter. The signal is $5$~s long and the sampling rate is $4000$~Hz. We compute the Short Time Fourier Transform (STFT) with a $512$ sample-long ($0.128$~s) Hann analysis window and a $50\%$ overlap. The spectrogram of the signal is represented in Figure~\ref{SpectroSynth}. As our input signal has four sources, we expect that one source can be represented by one component and therefore, a model of rank 4 ($k=4$) should adequately model the signals. More precisely, for the NMF and the PNMF we chose $k=4$ and for the SPNMF $k'=2$ and $e=2$. The choice of the rank of factorization is an important variable of the problem, in this case, we select it in order to illustrate the performance of the method. We will further discuss the importance of the choice of the rank of factorization in Section~\ref{setup:rank}. We compare SPNMF with PNMF and NMF using the KL distance with multiplicative update rules as stated in~\cite{fevotte2009nonnegative}. The three algorithms are initialized with the same random positive matrices $W_{ini} \in \mathbb{R}^{n \times k}$  and $ H_{ini} \in \mathbb{R}^{k \times m}_{+} $.
+To illustrate how the straight SPNMF (Algorithme~\ref{AlgoMultipl}) works, we use a simple synthetic signal. The test signal models a mix of harmonic and percussive instruments. The harmonic part is simulated by a sum of sine waves that overlap in time and frequency. The first signal simulates a $C(3)$ with fundamental frequency $f_0 = 131$~Hz, the other one a $B(4)$ with $f_0 = 492$~Hz. To simulate the percussive part, we add $0.1$~s of Gaussian white noise for the first two second. For the last two seconds, we add $0.3$~s of Gaussian white noise filtered by a high-pass filter. The signal is $5$~s long and the sampling rate is $4000$~Hz. We compute the Short Time Fourier Transform (STFT) with a $512$ sample-long ($0.128$~s) Hann analysis window and a $50\%$ overlap. The spectrogram of the signal is represented in Figure~\ref{SpectroSynth}. As our input signal has four sources, we expect that one source can be represented by one component and therefore, a model of rank 4 ($k=4$) should adequately model the signals. More precisely, for the NMF and the PNMF we chose $k=4$ and for the SPNMF $k'=2$ and $e=2$. The choice of the rank of factorization is an important variable of the problem, in this case, we select it in order to illustrate the performance of the method. We will further discuss the importance of the choice of the rank of factorization in Section~\ref{setup:rank}. We compare the SPNMF with the PNMF and the NMF using the KL distance with multiplicative update rules as stated in~\cite{fevotte2009nonnegative}. The three algorithms are initialized with the same random positive matrices $W_{ini} \in \mathbb{R}^{n \times k}$  and $ H_{ini} \in \mathbb{R}^{k \times m}_{+} $.
 
-The results of the decomposition are presented in Figure~\ref{resultONMF2}. The dictionary and activation matrix show the separation performance of the three methods. The NMF does not separate correctly the four components. By looking at the columns $2$ and $3$ of the dictionary matrix $W$ on Figure~\ref{resultONMF2}, the filtered Gaussian white noise and the $C(3)$ are separated in the same components which does not correspond to the expected result.
+The results of the decomposition are presented in Figure~\ref{resultONMF2}. The dictionary and activation matrices show the separation performance of the three methods. The NMF does not separate correctly the four components. By looking at the columns $2$ and $3$ of the dictionary matrix $W$ on Figure~\ref{resultONMF2}, the filtered Gaussian white noise and the $C(3)$ are separated in the same components which does not correspond to the expected result.
 For the PNMF, the orthogonal components do not succeed to represent the two noises correctly. They are extracted in the same component and the total reconstruction error of the PNMF is high.
 In this example, the SPNMF extracts the four components with the highest accuracy and performs better than the other methods. The two harmonic components are extracted in the orthogonal part (i.e., the columns $1$ and $2$ of the dictionary matrix) while the percussive components are extracted by the NMF part (columns $3$ and $4$). The SPNMF outperforms the two other methods and shows therefore the potential of the algorithm for harmonic/percussive source separation.
 %
@@ -18,7 +18,7 @@ In this example, the SPNMF extracts the four components with the highest accurac
   \centering 
   \includegraphics[width=9cm]{fig/synthetictestspectrogram}
 %  \vspace{2.0cm}
-  \caption{\label{SpectroSynth} Spectrogram of the synthetic test signals.}
+  \caption{\label{SpectroSynth} Spectrogram of the synthetic test signal.}
   
 \end{figure}
 
@@ -36,14 +36,14 @@ In this example, the SPNMF extracts the four components with the highest accurac
 \subsection{Protocol and details of the test database}
 
 
-To understand the behaviour of the SPNMF with the fixed dictionary (Algorithm~\ref{AlgoDictionary}), we run different tests on the public SiSec database from~\cite{SiSec10}. It is composed of polyphonic real-world music excerpts. Each music signal contains percussive, harmonic instruments and vocals. It consists of four recordings whose durations range from $14$ to $24$~s. The goal is to perform a harmonic/percussive decomposition. Following~\cite{canadas2014percussive}, we will not consider the vocal part and we will build mixture signals only from the percussive and harmonic instruments. All the signals are sampled at $44.1kHz$. We compute the STFT with a $1024$ and $2048$ sample-long Hann window with a $50\%$ overlap.
+To study the impact of using learned dictionaries in SPNMF (algorithm \ref{AlgoDictionary}), we run different tests on the public SiSec database from \cite{SiSec10}. It is composed of polyphonic real-world music excerpts. Each music signal contains percussive, harmonic instruments and vocals. It consists of four recordings whose durations range from $14$ to $24$~s. The goal is to perform a harmonic/percussive decomposition. Following~\cite{canadas2014percussive}, we will not consider the vocal part and we will build mixture signals only from the percussive and harmonic instruments. All the signals are sampled at $44.1kHz$. We compute the STFT with a $1024$ and $2048$ sample-long Hann window with a $50\%$ overlap.
 Three tests are run on these data:
 \begin{enumerate}
 	\item The first test aims at assessing the robustness of the SPNMF with respect to the rank of the PNMF part. 
 	\item The second test is to evaluate which of the three divergences (Euc, KL and IS respectively) give the best harmonic/percussive decomposition.
 	\item The last test shows the influence of the dictionary on the separation performance. 
 \end{enumerate} 
-We are using a different database to set-up the proposed method from the one in the evaluation phase in order to prevent any possible over-training and therefore to get the most accurate and fair comparison. 
+We are using a different database to tune the proposed method from the one in the evaluation phase in order to prevent any possible over-training and therefore to get the most accurate and fair comparison. 
 In order to evaluate and compare the results we then compute the common Signal to Distortion Ratio/Signal to Interference Ration/Signal to Artefact Ratio (SDR/SIR/SAR) metrics for blind source separation with the BSS-Eval toolbox~\cite{bsseval}. 
 
 
@@ -77,10 +77,10 @@ In this section we discuss the influence of the divergence in the results of the
 When the frame length is small, the percussive instruments are well represented and the energy is localized. Using a longer window spreads the percussive energy while the tonal components are well separated in the TF domain.
 
 When the frame size is small, Figure~\ref{frame1024} shows that the percussive decomposition is better for the Euclidean distance and the KL divergences. However, the harmonic components are not well separated in the TF domain and the orthogonal part of SPNMF does not perform a good separation.  
-In the case of a long window, the Figure~\ref{frame2048} shows that the IS divergence works better than the other divergences. The orthogonal part is more effective to extract the harmonic components as the finer frequency resolution allows for a better separation in the TF domain. The IS divergence is scale invariant. It means that the low energy components of the spectrogram bear the same relative importance as the higher ones which allows a good extraction of the percussive instruments even if the energy is spread temporally.
+In the case of a long window, Figure~\ref{frame2048} shows that the IS divergence works better than the other divergences. The orthogonal part is more effective to extract the harmonic components as the finer frequency resolution allows for a better separation in the TF domain. The IS divergence is scale invariant. It means that the low energy components of the spectrogram bear the same relative importance as the higher ones which allows a good extraction of the percussive instruments even if the energy is spread temporally.
 
 
-For the rest of the article, we will use the SPNMF algorithm with the IS divergence and a $2048$ window size in the STFT.
+For the rest of the article, we will use the SPNMF algorithm with the IS divergence and a window size of 2048 samples for the STFT.
 
 
 \begin{figure}[htb]
@@ -120,30 +120,3 @@ We display on Figure~\ref{resultsDict} the SDR results of the decomposition usin
   
 \end{figure}
 
-
-%\begin{table}
-%   
-%	\centering    
-%   \begin{tabular}{|l|l|l|l|l|}
-%  \hline
-%  &    & Percussive separation & Harmonic separation  \\
-%  \hline
-%       & NMF          & 10.28 & 2.69  \\
-%  SDR  & STFT         & 10.17 & 2.59  \\
-%  (dB) & Concatenated & 10.21 & 2.51  \\  
-%  \hline
-%       & NMF           & 20.97 & 2.45  \\
-%  SIR  & STFT          & 21.11 & 2.61  \\
-%  (dB) & Concatenated  & 20.70 & 2.65  \\  
-%   \hline
-%       & NMF           & 10.70 & 29.41  \\
-%  SAR  & STFT          & 10.58 & 29.59  \\
-%  (dB) & Concatenated  & 10.65 & 29.58  \\ 
-%  \hline
-%\end{tabular} 
-%\caption{\label{resultsDict} Source separation performance using three dictionaries.}
-%
-%
-%\end{table}
-%\vspace{-0.4cm}
-%

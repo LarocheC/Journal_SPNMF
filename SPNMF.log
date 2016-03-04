@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.27)  29 FEB 2016 11:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  4 MAR 2016 13:46
 entering extended mode
- \write18 enabled.
- file:line:error style messages enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **SPNMF.tex
 (./SPNMF.tex
@@ -453,27 +452,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]) (./background.tex)
-(./method.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
+(./method.tex [2]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./validation.tex [4]
+[3]) (./validation.tex [4]
 Package epstopdf Info: Source file: <fig/synthetictestspectrogram.eps>
-(epstopdf)                    date: 2016-02-29 11:37:26
+(epstopdf)                    date: 2016-02-21 22:44:03
 (epstopdf)                    size: 21979 bytes
 (epstopdf)             Output file: <fig/synthetictestspectrogram-eps-converted
 -to.pdf>
-(epstopdf)                    date: 2016-02-29 11:42:05
+(epstopdf)                    date: 2016-02-29 12:01:20
 (epstopdf)                    size: 12244 bytes
-(epstopdf)             Command: <epstopdf --outfile=fig/synthetictestspectrogra
-m-eps-converted-to.pdf fig/synthetictestspectrogram.eps>
+(epstopdf)             Command: <repstopdf --outfile=fig/synthetictestspectrogr
+am-eps-converted-to.pdf fig/synthetictestspectrogram.eps>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
 
@@ -491,13 +483,13 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 19--21
  []
 
 Package epstopdf Info: Source file: <fig/WHcomp.eps>
-(epstopdf)                    date: 2016-02-29 11:37:26
+(epstopdf)                    date: 2016-02-21 22:44:03
 (epstopdf)                    size: 33919 bytes
 (epstopdf)             Output file: <fig/WHcomp-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-02-29 11:42:05
+(epstopdf)                    date: 2016-02-29 12:01:20
 (epstopdf)                    size: 11263 bytes
-(epstopdf)             Command: <epstopdf --outfile=fig/WHcomp-eps-converted-to
-.pdf fig/WHcomp.eps>
+(epstopdf)             Command: <repstopdf --outfile=fig/WHcomp-eps-converted-t
+o.pdf fig/WHcomp.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 <fig/WHcomp-eps-converted-to.pdf, id=32, 1446.40375pt x 815.045pt>
@@ -508,13 +500,13 @@ Package pdftex.def Info: fig/WHcomp-eps-converted-to.pdf used on input line 28.
 
 (pdftex.def)             Requested size: 426.79134pt x 240.49837pt.
 Package epstopdf Info: Source file: <fig/RankOfFact.eps>
-(epstopdf)                    date: 2016-02-29 11:37:26
+(epstopdf)                    date: 2016-02-21 22:44:03
 (epstopdf)                    size: 11245 bytes
 (epstopdf)             Output file: <fig/RankOfFact-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-02-29 11:42:05
+(epstopdf)                    date: 2016-02-29 12:01:20
 (epstopdf)                    size: 7924 bytes
-(epstopdf)             Command: <epstopdf --outfile=fig/RankOfFact-eps-converte
-d-to.pdf fig/RankOfFact.eps>
+(epstopdf)             Command: <repstopdf --outfile=fig/RankOfFact-eps-convert
+ed-to.pdf fig/RankOfFact.eps>
 (epstopdf)             \includegraphics on input line 63.
 Package epstopdf Info: Output file is already uptodate.
 
@@ -532,14 +524,14 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 63--65
 
 [5 <./fig/synthetictestspectrogram-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/DivergenceFrame1024.eps>
-(epstopdf)                    date: 2016-02-29 11:37:25
+(epstopdf)                    date: 2016-02-21 22:44:03
 (epstopdf)                    size: 31771864 bytes
 (epstopdf)             Output file: <fig/DivergenceFrame1024-eps-converted-to.p
 df>
-(epstopdf)                    date: 2016-02-29 11:42:06
+(epstopdf)                    date: 2016-02-29 12:01:20
 (epstopdf)                    size: 79748 bytes
-(epstopdf)             Command: <epstopdf --outfile=fig/DivergenceFrame1024-eps
--converted-to.pdf fig/DivergenceFrame1024.eps>
+(epstopdf)             Command: <repstopdf --outfile=fig/DivergenceFrame1024-ep
+s-converted-to.pdf fig/DivergenceFrame1024.eps>
 (epstopdf)             \includegraphics on input line 89.
 Package epstopdf Info: Output file is already uptodate.
 
@@ -556,14 +548,14 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 89--91
  []
 
 Package epstopdf Info: Source file: <fig/DivergenceFrame2048.eps>
-(epstopdf)                    date: 2016-02-29 11:37:25
+(epstopdf)                    date: 2016-02-21 22:44:03
 (epstopdf)                    size: 31771864 bytes
 (epstopdf)             Output file: <fig/DivergenceFrame2048-eps-converted-to.p
 df>
-(epstopdf)                    date: 2016-02-29 11:42:07
+(epstopdf)                    date: 2016-02-29 12:01:20
 (epstopdf)                    size: 81822 bytes
-(epstopdf)             Command: <epstopdf --outfile=fig/DivergenceFrame2048-eps
--converted-to.pdf fig/DivergenceFrame2048.eps>
+(epstopdf)             Command: <repstopdf --outfile=fig/DivergenceFrame2048-ep
+s-converted-to.pdf fig/DivergenceFrame2048.eps>
 (epstopdf)             \includegraphics on input line 99.
 Package epstopdf Info: Output file is already uptodate.
 <fig/DivergenceFrame2048-eps-converted-to.pdf, id=45, 1445.4pt x 845.1575pt>
@@ -579,13 +571,13 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 99--101
  []
 
 Package epstopdf Info: Source file: <fig/DictSDR.eps>
-(epstopdf)                    date: 2016-02-29 11:37:25
+(epstopdf)                    date: 2016-02-21 22:44:03
 (epstopdf)                    size: 30577982 bytes
 (epstopdf)             Output file: <fig/DictSDR-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-02-29 11:42:08
+(epstopdf)                    date: 2016-02-29 12:01:20
 (epstopdf)                    size: 64947 bytes
-(epstopdf)             Command: <epstopdf --outfile=fig/DictSDR-eps-converted-t
-o.pdf fig/DictSDR.eps>
+(epstopdf)             Command: <repstopdf --outfile=fig/DictSDR-eps-converted-
+to.pdf fig/DictSDR.eps>
 (epstopdf)             \includegraphics on input line 117.
 Package epstopdf Info: Output file is already uptodate.
 <fig/DictSDR-eps-converted-to.pdf, id=46, 1445.4pt x 815.045pt>
@@ -599,20 +591,19 @@ Package pdftex.def Info: fig/DictSDR-eps-converted-to.pdf used on input line 11
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6 <./fig/WHcomp-eps-converted-to.pdf> <./fig/RankOfFact-eps-converted-to.pdf>
- <./fig/DivergenceFrame1024-eps-converted-to.pdf>] [7 <./fig/DivergenceFrame204
-8-eps-converted-to.pdf> <./fig/DictSDR-eps-converted-to.pdf>]
+ <./fig/DivergenceFrame1024-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/DatabaseSDR.eps>
-(epstopdf)                    date: 2016-02-29 11:37:25
+(epstopdf)                    date: 2016-02-21 22:44:02
 (epstopdf)                    size: 30577986 bytes
 (epstopdf)             Output file: <fig/DatabaseSDR-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-02-29 11:42:08
+(epstopdf)                    date: 2016-02-29 12:01:20
 (epstopdf)                    size: 57979 bytes
-(epstopdf)             Command: <epstopdf --outfile=fig/DatabaseSDR-eps-convert
-ed-to.pdf fig/DatabaseSDR.eps>
+(epstopdf)             Command: <repstopdf --outfile=fig/DatabaseSDR-eps-conver
+ted-to.pdf fig/DatabaseSDR.eps>
 (epstopdf)             \includegraphics on input line 39.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/DatabaseSDR-eps-converted-to.pdf, id=168, 1445.4pt x 815.045pt>
+<fig/DatabaseSDR-eps-converted-to.pdf, id=97, 1445.4pt x 815.045pt>
 File: fig/DatabaseSDR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/DatabaseSDR-eps-converted-to.pdf>
@@ -624,16 +615,19 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 39--41
  [][] 
  []
 
+[7 <./fig/DivergenceFrame2048-eps-converted-to.pdf> <./fig/DictSDR-eps-converte
+d-to.pdf>]
 Package epstopdf Info: Source file: <fig/DatabaseSIR.eps>
-(epstopdf)                    date: 2016-02-29 11:37:25
+(epstopdf)                    date: 2016-02-21 22:44:02
 (epstopdf)                    size: 30577986 bytes
 (epstopdf)             Output file: <fig/DatabaseSIR-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-02-29 11:42:09
+(epstopdf)                    date: 2016-02-29 12:01:20
 (epstopdf)                    size: 55629 bytes
-(epstopdf)             Command: <epstopdf --outfile=fig/DatabaseSIR-eps-convert
-ed-to.pdf fig/DatabaseSIR.eps>
+(epstopdf)             Command: <repstopdf --outfile=fig/DatabaseSIR-eps-conver
+ted-to.pdf fig/DatabaseSIR.eps>
 (epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
+
 <fig/DatabaseSIR-eps-converted-to.pdf, id=169, 1445.4pt x 815.045pt>
 File: fig/DatabaseSIR-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -647,13 +641,13 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 48--50
  []
 
 Package epstopdf Info: Source file: <fig/DatabaseSAR.eps>
-(epstopdf)                    date: 2016-02-29 11:37:25
+(epstopdf)                    date: 2016-02-21 22:44:02
 (epstopdf)                    size: 30577986 bytes
 (epstopdf)             Output file: <fig/DatabaseSAR-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-02-29 11:42:10
+(epstopdf)                    date: 2016-02-29 12:01:20
 (epstopdf)                    size: 52444 bytes
-(epstopdf)             Command: <epstopdf --outfile=fig/DatabaseSAR-eps-convert
-ed-to.pdf fig/DatabaseSAR.eps>
+(epstopdf)             Command: <repstopdf --outfile=fig/DatabaseSAR-eps-conver
+ted-to.pdf fig/DatabaseSAR.eps>
 (epstopdf)             \includegraphics on input line 57.
 Package epstopdf Info: Output file is already uptodate.
 <fig/DatabaseSAR-eps-converted-to.pdf, id=170, 1445.4pt x 815.045pt>
@@ -669,14 +663,14 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 57--59
  []
 
 Package epstopdf Info: Source file: <fig/ElectroFusionSDR.eps>
-(epstopdf)                    date: 2016-02-29 11:37:26
+(epstopdf)                    date: 2016-02-21 22:44:03
 (epstopdf)                    size: 30577991 bytes
 (epstopdf)             Output file: <fig/ElectroFusionSDR-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2016-02-29 11:42:11
+(epstopdf)                    date: 2016-02-29 12:01:20
 (epstopdf)                    size: 57709 bytes
-(epstopdf)             Command: <epstopdf --outfile=fig/ElectroFusionSDR-eps-co
-nverted-to.pdf fig/ElectroFusionSDR.eps>
+(epstopdf)             Command: <repstopdf --outfile=fig/ElectroFusionSDR-eps-c
+onverted-to.pdf fig/ElectroFusionSDR.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 <fig/ElectroFusionSDR-eps-converted-to.pdf, id=171, 1445.4pt x 815.045pt>
@@ -692,16 +686,16 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 86--88
  []
 
 [8 <./fig/DatabaseSDR-eps-converted-to.pdf> <./fig/DatabaseSIR-eps-converted-to
-.pdf> <./fig/DatabaseSAR-eps-converted-to.pdf>]) (./conclusion.tex)
-(./appendix.tex [9 <./fig/ElectroFusionSDR-eps-converted-to.pdf>]
+.pdf> <./fig/DatabaseSAR-eps-converted-to.pdf> <./fig/ElectroFusionSDR-eps-conv
+erted-to.pdf>]) (./conclusion.tex) (./appendix.tex [9]
 Package epstopdf Info: Source file: <fig/DictSAR.eps>
-(epstopdf)                    date: 2016-02-29 11:37:25
+(epstopdf)                    date: 2016-02-21 22:44:02
 (epstopdf)                    size: 30577982 bytes
 (epstopdf)             Output file: <fig/DictSAR-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-02-29 11:42:11
+(epstopdf)                    date: 2016-02-29 12:01:20
 (epstopdf)                    size: 57018 bytes
-(epstopdf)             Command: <epstopdf --outfile=fig/DictSAR-eps-converted-t
-o.pdf fig/DictSAR.eps>
+(epstopdf)             Command: <repstopdf --outfile=fig/DictSAR-eps-converted-
+to.pdf fig/DictSAR.eps>
 (epstopdf)             \includegraphics on input line 77.
 Package epstopdf Info: Output file is already uptodate.
 
@@ -713,13 +707,13 @@ Package pdftex.def Info: fig/DictSAR-eps-converted-to.pdf used on input line 77
 .
 (pdftex.def)             Requested size: 227.62204pt x 128.34538pt.
 Package epstopdf Info: Source file: <fig/DictSIR.eps>
-(epstopdf)                    date: 2016-02-29 11:37:25
+(epstopdf)                    date: 2016-02-21 22:44:03
 (epstopdf)                    size: 30577982 bytes
 (epstopdf)             Output file: <fig/DictSIR-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-02-29 11:42:12
+(epstopdf)                    date: 2016-02-29 12:01:20
 (epstopdf)                    size: 53999 bytes
-(epstopdf)             Command: <epstopdf --outfile=fig/DictSIR-eps-converted-t
-o.pdf fig/DictSIR.eps>
+(epstopdf)             Command: <repstopdf --outfile=fig/DictSIR-eps-converted-
+to.pdf fig/DictSIR.eps>
 (epstopdf)             \includegraphics on input line 83.
 Package epstopdf Info: Output file is already uptodate.
 
@@ -731,14 +725,14 @@ Package pdftex.def Info: fig/DictSIR-eps-converted-to.pdf used on input line 83
 .
 (pdftex.def)             Requested size: 227.62204pt x 128.34538pt.
 Package epstopdf Info: Source file: <fig/ElectroFusionSIR.eps>
-(epstopdf)                    date: 2016-02-29 11:37:26
+(epstopdf)                    date: 2016-02-21 22:44:03
 (epstopdf)                    size: 30577991 bytes
 (epstopdf)             Output file: <fig/ElectroFusionSIR-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2016-02-29 11:42:13
+(epstopdf)                    date: 2016-02-29 12:01:20
 (epstopdf)                    size: 57551 bytes
-(epstopdf)             Command: <epstopdf --outfile=fig/ElectroFusionSIR-eps-co
-nverted-to.pdf fig/ElectroFusionSIR.eps>
+(epstopdf)             Command: <repstopdf --outfile=fig/ElectroFusionSIR-eps-c
+onverted-to.pdf fig/ElectroFusionSIR.eps>
 (epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
 
@@ -755,14 +749,14 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 92--93
  []
 
 Package epstopdf Info: Source file: <fig/ElectroFusionSAR.eps>
-(epstopdf)                    date: 2016-02-29 11:37:26
+(epstopdf)                    date: 2016-02-21 22:44:03
 (epstopdf)                    size: 30577991 bytes
 (epstopdf)             Output file: <fig/ElectroFusionSAR-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2016-02-29 11:42:14
+(epstopdf)                    date: 2016-02-29 12:01:20
 (epstopdf)                    size: 56825 bytes
-(epstopdf)             Command: <epstopdf --outfile=fig/ElectroFusionSAR-eps-co
-nverted-to.pdf fig/ElectroFusionSAR.eps>
+(epstopdf)             Command: <repstopdf --outfile=fig/ElectroFusionSAR-eps-c
+onverted-to.pdf fig/ElectroFusionSAR.eps>
 (epstopdf)             \includegraphics on input line 98.
 Package epstopdf Info: Output file is already uptodate.
 <fig/ElectroFusionSAR-eps-converted-to.pdf, id=306, 1445.4pt x 815.045pt>
@@ -787,13 +781,13 @@ l in-stru-ment
 
 ) [11] (./SPNMF.aux) ) 
 Here is how much of TeX's memory you used:
- 6427 strings out of 493089
- 100293 string characters out of 6134841
- 197719 words of memory out of 5000000
+ 6423 strings out of 493089
+ 100256 string characters out of 6134842
+ 196716 words of memory out of 5000000
  9780 multiletter control sequences out of 15000+600000
- 40270 words of font info for 75 fonts, out of 8000000 for 9000
- 1144 hyphenation exceptions out of 8191
- 42i,13n,38p,1728b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39163 words of font info for 74 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,13n,38p,1761b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/
 8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
 0.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
@@ -812,7 +806,7 @@ cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr
 /texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on SPNMF.pdf (11 pages, 889041 bytes).
+Output written on SPNMF.pdf (11 pages, 887958 bytes).
 PDF statistics:
  496 PDF objects out of 1000 (max. 8388607)
  116 compressed objects within 2 object streams

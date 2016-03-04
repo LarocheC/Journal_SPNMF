@@ -537,7 +537,7 @@ $$
 $$
 where $\|.\|^{2}$ is the squared Euclidean distance.
 
-The aim of PNMF is to find a non negative projection matrix $P \in \mathbb{R}_{+}^{n \times n}$ such that $V \approx \tilde{V} = PV$. In \cite{yuanOja2005} Yuan \& al. propose to seek $P$ as an approximative projection matrix under the form $P = WW^{T}$ with $W \in \mathbb{R}_{+}^{n \times k}$ with $ k \leqslant n $. The PNMF problem reads : 
+The aim of hte PNMF is to find a non negative projection matrix $P \in \mathbb{R}_{+}^{n \times n}$ such that $V \approx \tilde{V} = PV$. In \cite{yuanOja2005} Yuan \& al. propose to seek $P$ as an approximative projection matrix under the form $P = WW^{T}$ with $W \in \mathbb{R}_{+}^{n \times k}$ with $ k \leqslant n $. The PNMF problem reads : 
 \begin{equation}\label{EqPnmf}
 \min_{W \geqslant 0} ||V - WW^{T}V||^2 
 \end{equation}
@@ -548,9 +548,9 @@ Another very similar approach is the ONMF \cite{choi}. It consists in solving th
 \begin{align}
 \min_{W \geqslant 0, H \geqslant0} ||V - WH||^2 \quad   \text{s.t}.\quad W^{T}W=I_{k} 
 \end{align}%
-In this method, orthogonality between nonnegative basis functions is enforced during the optimization process. In theory, it seems that PNMF and ONMF lead to similar decompositions, as the $W$ matrix estimated by PNMF is almost orthogonal (i.e., $\|W^{T}W-I_{k}\|^{2}$ is small). However in practice, enforcing the orthogonality between the basis functions at every iteration is a too strong constraint to properly decompose audio signals \cite{laroche2015structured}. 
+In this method, orthogonality between nonnegative basis functions is enforced during the optimization process. In theory, it seems thatvthe PNMF and the ONMF lead to similar decompositions, as the $W$ matrix estimated by PNMF is almost orthogonal (i.e., $\|W^{T}W-I_{k}\|^{2}$ is small). However in practice, enforcing the orthogonality between the basis functions at every iteration is a too strong constraint to properly decompose audio signals \cite{laroche2015structured}. 
 
-The sparsity of the dictionary matrix is an interesting property for the decomposition of audio signals and especially for the decomposition of harmonic instruments with very localized harmonic spectra. Contrary to NMF, the sparsity of PNMF is an inherent feature of the decomposition. These key properties of PNMF motivated us to decompose the harmonic instruments with the orthogonal basis functions.
+The sparsity of the dictionary matrix is an interesting property for the decomposition of audio signals and especially for the decomposition of harmonic instruments with very localized harmonic spectra. Contrary to the NMF, the sparsity of the PNMF is an inherent feature of the decomposition. These key properties of the PNMF motivated us to decompose the harmonic instruments with the orthogonal basis functions.
 
 
 \subsection{Principle of SPNMF}
@@ -718,7 +718,7 @@ In order to evaluate and compare the results we compute the common metric for bl
 
 \subsection{Robustness wrt the rank of the harmonic part}\label{setup:rank}
 
-In the case where we use a dictionary matrix, the only parameter of the algorithm is the rank of factorization of the harmonic part. We used the SPNMF algorithm with the fixed dictionary obtained from the STFT of a drum signal as described in sec \ref{fixedict}. The algorithms are implemented using the multiplicative update rules from \ref{euclidisteq}, \ref{KLdisteq} and \ref{ISdisteq} and they are all initialized with the same random non-negative matrices. 
+In the case where we use a dictionary matrix, the only parameter of the algorithm is the rank of factorization of the harmonic part. We used the SPNMF algorithm with the fixed dictionary obtained from the STFT of a drum signal as described in sec \ref{fixedict}. The algorithms use the multiplicative update rules from \ref{euclidisteq}, \ref{KLdisteq} and \ref{ISdisteq} and they are all initialized with the same random non-negative matrices. 
 We display the mean value of the separation results on Figure \ref{RankOfFact}. When the rank of factorization is small, the Euclidean distance and the KL divergence do not obtain satisfying results however, for $r>=100$, the results for both distance are stable. With the IS divergence, the results are independent of the size of the factorization.
 
 The optimization process of SPNMF is straight forward thanks to the robustness of the method to the value of the rank of factorization. The number of components that can be decomposed by orthogonal basis functions are limited and increasing the rank of factorization does not perturb the results as the harmonic part has to be orthogonal. For the rest of the article, the rank of factorization will be set to $r=100$ for all methods.
@@ -744,7 +744,7 @@ In this section we discuss the influence of the divergence in the results of the
 When the frame length is small, the percussive instruments are well represented and the energy is localized. Using a longer window spreads the percussive energy while the tonal components are well separated in the TF domain.
 
 When the frame size is small, Figure \ref{frame1024} shows that the percussive decomposition is better for the Euclidean distance and the KL divergences, however, the harmonic components are not well separated in the TF domain, the orthogonal part of SPNMF does not perform a good separation.  
-In the case of a long window, the Figure \ref{frame2048} shows that the IS divergence performs better than the other divergences. The orthogonal part is more effective to extract the harmonic components as the finer frequency resolution allows for a better separation in the TF domain. The scale invariant property of the IS divergence meaning that low energy components of the spectrogram bear the same relative importance as high energy ones, allows a good extraction of the percussive instruments even if the energy is spread temporally.
+In the case of a long window, Figure \ref{frame2048} shows that the IS divergence performs better than the other divergences. The orthogonal part is more effective to extract the harmonic components as the finer frequency resolution allows for a better separation in the TF domain. The scale invariant property of the IS divergence meaning that low energy components of the spectrogram bear the same relative importance as high energy ones, allows a good extraction of the percussive instruments even if the energy is spread temporally.
 
 
 For the rest of the article, we will use the SPNMF algorithm with the IS divergence and a window size of 2048 samples for the STFT.

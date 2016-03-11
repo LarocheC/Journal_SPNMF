@@ -53,8 +53,8 @@ The gradient wrt $W_1$ gives
 $$[\nabla_{W_1} D(V|\tilde{V})]_{i,j}^{-} = (ZV^TW_1)_{i,j} + (VZ^TW_1)_{i,j},$$
 with $Z_{i,j} = (\frac{V}{W_1W_1^TV + W_2H_2})_{i,j}$. 
 The positive part of the gradient is
-$$[\nabla_{W_1} D(V|\tilde{V})]_{i,j}^{-} = (\phi V^TW_1)_{i,j} + (V \phi^T W_1)_{i,j},$$
-with $$ \phi_{i,j} = (\frac{I}{W_1W_1^TV + W_2H_2})_{i,j}.$$ and $I = ones(size(V))$.
+$$[\nabla_{W_1} D(V|\tilde{V})]_{i,j}^{+} = (\phi V^TW_1)_{i,j} + (V \phi^T W_1)_{i,j},$$
+with $$ \phi_{i,j} = (\frac{I}{W_1W_1^TV + W_2H_2})_{i,j}.$$ and $I \in \mathbb{R}^{f \times t} ; \forall i,j \quad I_{i,j}=1$.
 
 
 Similarly, the gradient wrt $W_2$ gives

@@ -38,7 +38,7 @@ with $V_P$ the spectrogram of the percussive part and $V_H$ the spectrogram of t
 \begin{equation}
 V \approx \tilde{V}= W_{H}W_{H}^{T}V + W_{P} H_{P}.
 \end{equation}
-The data matrix is approximated by an almost orthogonal sparse part that codes the harmonic instruments $V_H = W_HW_H^T V$ and a non constrained NMF part that codes the percussive instruments $V_P = W_PH_P$. The main advantage of the SPNMF results is in the fact that the method has few parameters compared to constrained NMF and NMPCF while still obtaining similar results~\cite{laroche2015structured}. 
+The data matrix is approximated by an almost orthogonal sparse part that codes the harmonic instruments $V_H = W_HW_H^T V$ and a non constrained NMF part that codes the percussive instruments $V_P = W_PH_P$. The main advantage of the SPNMF results is in the fact that the method has few parameters compared to constrained NMF~\cite{canadas2014percussive}and NMPCF~\cite{kim2011nonnegative} while still obtaining similar results~\cite{laroche2015structured}. 
 
 
 \subsection{Algorithm Optimization}
@@ -55,8 +55,8 @@ The SPNMF model gives the following cost function :
 A solution of this problem can be obtained by iterative multiplicative update rules following the same strategy as in~\cite{yuanOja2005,Lee01algorithmsfor} which consists in splitting the gradient with respect to (wrt) one variable (here $W_H$ for exemple) $\nabla_{W_H} D(V|\tilde{V})$ in its positive $[\nabla_{W_H} D(V|\tilde{V})]^{+}$ and negative parts $[\nabla_{W_H} D(V|\tilde{V})]^{-}$.
 The multiplicative updates for SPNMF are then given by: 
 $$W_{H} \leftarrow W_{H} \otimes \frac{ [\nabla_{W_H} D(V|\tilde{V})]^{-} }{[\nabla_{W_H} D(V|\tilde{V})]^{+}}, $$
-where $\otimes$ is the Hadamard product or element-wise product. Details of the equations for the Euc distance, KL and IS divergences are given in the annexe at \ref{euclidisteq}, \ref{KLdisteq} and \ref{ISdisteq} respectively. 
-The algorithm for the SPNMF is organised as follows. We make the optimization sequentially in the algorithm \ref{AlgoMultipl}.
+where $\otimes$ is the Hadamard product or element-wise product. Details of the equations for the Euc distance, KL and IS divergences are given in the annex in Sections \ref{euclidisteq}, \ref{KLdisteq} and \ref{ISdisteq} respectively. 
+The optimization of the SPNMF algorithm is done sequentially, as described in Algorithm \ref{AlgoMultipl}.
 
 \begin{algorithm}[h]
  Input: $V \in \mathbb{R}_{+}^{m \times n} $
@@ -84,16 +84,15 @@ The algorithm for the SPNMF is organised as follows. We make the optimization se
 
 \subsection{SPNMF with fixed dictionary}\label{fixedict}  
 
-A fully unsupervised SPNMF model does not allow for a satisfying harmonic/percussive source separation~\cite{laroche2015structured}. To alleviate this problem, we use here a fixed drum dictionary $W_p$ in the percussive part of the SPNMF which is created using the drum database ENST-Drums~\cite{gillet2006enst}. In this database three professional drum players specialized in a specific type of music have been recorded. Each drummer uses a specific drum set from a small one (two toms and 2 cymbals) to a full rock drum kit (four toms and five cymbals). 
+A fully unsupervised SPNMF model does not allow for a satisfying harmonic/percussive source separation~\cite{laroche2015structured}. To alleviate this problem, we use here a fixed drum dictionary $W_p$ for the percussive part of the SPNMF which is created using the drum database ENST-Drums~\cite{gillet2006enst}. In this database three professional drum players specialized in a specific type of music have been recorded. Each drummer uses a specific drum set from a small one (two toms and two cymbals) to a full rock drum kit (four toms and five cymbals). 
 
 Two different ways can be used to build a dictionary. The first one is to perform a NMF decomposition on a large database~\cite{jaureguiberry2011adaptation}. The recording of the three drummers are concatenated independently to obtain three long audio drum signals of each drum kit. We execute a NMF on the spectrogram of the signals. The rank of the decomposition is chosen as $k=12$ for each of the signals. We consider that each element of the drum kit is represented by two basis functions. This method is effective at giving a dictionary specific to an instrument and the size of the dictionary is maintained low so it does not increase the computation time. However, the template of the dictionary does not represent a single element of the drum kit so it is not possible to perform direct drum transcription.
 
-A second way to build the dictionary is to directly use the STFT of a drum signal~\cite{wudrum}. This method allows to have a specific dictionary, yet the matrix is redundant and very large which increases the computation time. The ENST-Drum database contains audio files where elements of the drum kit are played independently and that we used to build another types of drum dictionary. 
-Both learning methods are compared in Section \ref{setup:dictionary}.
+A second way to build the dictionary is to directly use the STFT of a drum signal~\cite{wudrum}. The ENST-Drum database contains audio files where elements of the drum kit are played independently and that we used to build another types of drum dictionary. This method allows having a specific dictionary, yet the matrix is redundant and very large which increases the computation time. Both learning methods are compared in Section \ref{setup:dictionary}. \\
 
-The main advantage of this method over the concurrent approachs is that it can take into account some of the percussive instruments that have a sparse spectrum. The bass drum and the toms have almost harmonic spectra with most energy in the low frequency range. These sounds are consequently hard to extract while enforcing frequency regularity of the percussive part like in~\cite{canadas2014percussive,ono2008separation}.
+The main advantage of the proposed method over the previously mentioned concurrent approaches is that it can take into account some of the percussive instruments that have a sparse spectrum. The bass drum and the toms have almost harmonic spectra with most energy in the low frequency range. These sounds are consequently hard to extract while enforcing frequency regularity of the percussive part like in~\cite{canadas2014percussive,ono2008separation}.
 
-The algorithm with the fixed dictionary matrix is described by algorithm \ref{AlgoDictionary}.
+The SPNMF algorithm with the fixed dictionary matrix is described by Algorithm \ref{AlgoDictionary}.
  
 \begin{algorithm}[h]
  Input: $V \in \mathbb{R}_{+}^{m \times n} $
@@ -122,13 +121,14 @@ The algorithm with the fixed dictionary matrix is described by algorithm \ref{Al
 
 The percussive signal $x_p(t)$ is synthesized using the magnitude percussive spectrogram $V_P = W_PH_P$. To reconstruct the phase of the percussive part, we use a generalized Wiener filter~\cite{liutkus:hal-01110028} to create a percussive mask as:
 \begin{equation}
-\mathcal{M}_P = \frac{V_P^\alpha}{V_M^\alpha + V_P^\alpha}.
+\mathcal{M}_P = \frac{V_P^\alpha}{V_M^\alpha + V_P^\alpha},
 \end{equation} 
-Where $\alpha \in (1,2)$. To retrieve the percussive signal as 
+\noindent, where $\alpha \in (1,2)$. To retrieve the percussive signal as 
 \begin{equation}
-x_p(t) = InverseSTFT(\mathcal{M}_P \otimes X).
+x_p(t) = InverseSTFT(\mathcal{M}_P \otimes X),
 \end{equation}
-Where $X$ is the complex spectrogram of the mixture.
+\noindent, where $X$ is the complex spectrogram of the mixture.
+
 Similarly for the harmonic part, we obtain:
 \begin{equation}\label{percuwiener}
 \mathcal{M}_H = \frac{V_H^\alpha}{V_M^\alpha + V_P^\alpha},

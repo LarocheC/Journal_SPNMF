@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  4 MAR 2016 13:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  14 MAR 2016 16:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -456,7 +456,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3]) (./validation.tex [4]
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./validation.tex [4]
 Package epstopdf Info: Source file: <fig/synthetictestspectrogram.eps>
 (epstopdf)                    date: 2016-02-21 22:44:03
 (epstopdf)                    size: 21979 bytes
@@ -570,6 +578,11 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 99--101
  [][] 
  []
 
+
+Underfull \vbox (badness 5954) has occurred while \output is active []
+
+ [6 <./fig/WHcomp-eps-converted-to.pdf> <./fig/RankOfFact-eps-converted-to.pdf>
+ <./fig/DivergenceFrame1024-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/DictSDR.eps>
 (epstopdf)                    date: 2016-02-21 22:44:03
 (epstopdf)                    size: 30577982 bytes
@@ -580,18 +593,16 @@ Package epstopdf Info: Source file: <fig/DictSDR.eps>
 to.pdf fig/DictSDR.eps>
 (epstopdf)             \includegraphics on input line 117.
 Package epstopdf Info: Output file is already uptodate.
-<fig/DictSDR-eps-converted-to.pdf, id=46, 1445.4pt x 815.045pt>
+
+<fig/DictSDR-eps-converted-to.pdf, id=96, 1445.4pt x 815.045pt>
 File: fig/DictSDR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/DictSDR-eps-converted-to.pdf>
 Package pdftex.def Info: fig/DictSDR-eps-converted-to.pdf used on input line 11
 7.
 (pdftex.def)             Requested size: 227.62204pt x 128.34538pt.
-) (./benchmark.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <./fig/WHcomp-eps-converted-to.pdf> <./fig/RankOfFact-eps-converted-to.pdf>
- <./fig/DivergenceFrame1024-eps-converted-to.pdf>]
+) (./benchmark.tex [7 <./fig/DivergenceFrame2048-eps-converted-to.pdf> <./fig/D
+ictSDR-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/DatabaseSDR.eps>
 (epstopdf)                    date: 2016-02-21 22:44:02
 (epstopdf)                    size: 30577986 bytes
@@ -603,7 +614,7 @@ ted-to.pdf fig/DatabaseSDR.eps>
 (epstopdf)             \includegraphics on input line 39.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/DatabaseSDR-eps-converted-to.pdf, id=97, 1445.4pt x 815.045pt>
+<fig/DatabaseSDR-eps-converted-to.pdf, id=168, 1445.4pt x 815.045pt>
 File: fig/DatabaseSDR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/DatabaseSDR-eps-converted-to.pdf>
@@ -615,8 +626,6 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 39--41
  [][] 
  []
 
-[7 <./fig/DivergenceFrame2048-eps-converted-to.pdf> <./fig/DictSDR-eps-converte
-d-to.pdf>]
 Package epstopdf Info: Source file: <fig/DatabaseSIR.eps>
 (epstopdf)                    date: 2016-02-21 22:44:02
 (epstopdf)                    size: 30577986 bytes
@@ -627,7 +636,6 @@ Package epstopdf Info: Source file: <fig/DatabaseSIR.eps>
 ted-to.pdf fig/DatabaseSIR.eps>
 (epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
-
 <fig/DatabaseSIR-eps-converted-to.pdf, id=169, 1445.4pt x 815.045pt>
 File: fig/DatabaseSIR-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -671,23 +679,23 @@ Package epstopdf Info: Source file: <fig/ElectroFusionSDR.eps>
 (epstopdf)                    size: 57709 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/ElectroFusionSDR-eps-c
 onverted-to.pdf fig/ElectroFusionSDR.eps>
-(epstopdf)             \includegraphics on input line 86.
+(epstopdf)             \includegraphics on input line 85.
 Package epstopdf Info: Output file is already uptodate.
 <fig/ElectroFusionSDR-eps-converted-to.pdf, id=171, 1445.4pt x 815.045pt>
 File: fig/ElectroFusionSDR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/ElectroFusionSDR-eps-converted-to.pdf>
 Package pdftex.def Info: fig/ElectroFusionSDR-eps-converted-to.pdf used on inpu
-t line 86.
+t line 85.
 (pdftex.def)             Requested size: 256.0748pt x 144.38857pt.
 
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 86--88
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 85--87
  [][] 
  []
 
 [8 <./fig/DatabaseSDR-eps-converted-to.pdf> <./fig/DatabaseSIR-eps-converted-to
-.pdf> <./fig/DatabaseSAR-eps-converted-to.pdf> <./fig/ElectroFusionSDR-eps-conv
-erted-to.pdf>]) (./conclusion.tex) (./appendix.tex [9]
+.pdf> <./fig/DatabaseSAR-eps-converted-to.pdf>]) (./conclusion.tex)
+(./appendix.tex [9 <./fig/ElectroFusionSDR-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/DictSAR.eps>
 (epstopdf)                    date: 2016-02-21 22:44:02
 (epstopdf)                    size: 30577982 bytes
@@ -699,7 +707,7 @@ to.pdf fig/DictSAR.eps>
 (epstopdf)             \includegraphics on input line 77.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/DictSAR-eps-converted-to.pdf, id=303, 1445.4pt x 815.045pt>
+<fig/DictSAR-eps-converted-to.pdf, id=302, 1445.4pt x 815.045pt>
 File: fig/DictSAR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/DictSAR-eps-converted-to.pdf>
@@ -717,7 +725,7 @@ to.pdf fig/DictSIR.eps>
 (epstopdf)             \includegraphics on input line 83.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/DictSIR-eps-converted-to.pdf, id=304, 1445.4pt x 815.045pt>
+<fig/DictSIR-eps-converted-to.pdf, id=303, 1445.4pt x 815.045pt>
 File: fig/DictSIR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/DictSIR-eps-converted-to.pdf>
@@ -736,7 +744,7 @@ onverted-to.pdf fig/ElectroFusionSIR.eps>
 (epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/ElectroFusionSIR-eps-converted-to.pdf, id=305, 1445.4pt x 815.045pt>
+<fig/ElectroFusionSIR-eps-converted-to.pdf, id=304, 1445.4pt x 815.045pt>
 File: fig/ElectroFusionSIR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/ElectroFusionSIR-eps-converted-to.pdf>
@@ -759,7 +767,7 @@ Package epstopdf Info: Source file: <fig/ElectroFusionSAR.eps>
 onverted-to.pdf fig/ElectroFusionSAR.eps>
 (epstopdf)             \includegraphics on input line 98.
 Package epstopdf Info: Output file is already uptodate.
-<fig/ElectroFusionSAR-eps-converted-to.pdf, id=306, 1445.4pt x 815.045pt>
+<fig/ElectroFusionSAR-eps-converted-to.pdf, id=305, 1445.4pt x 815.045pt>
 File: fig/ElectroFusionSAR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/ElectroFusionSAR-eps-converted-to.pdf>
@@ -771,42 +779,48 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 98--99
  [][] 
  []
 
-) (./SPNMF.bbl [10 <./fig/DictSAR-eps-converted-to.pdf> <./fig/DictSIR-eps-conv
-erted-to.pdf> <./fig/ElectroFusionSIR-eps-converted-to.pdf> <./fig/ElectroFusio
-nSAR-eps-converted-to.pdf>]
+)
+Underfull \vbox (badness 7869) has occurred while \output is active []
+
+ [10 <./fig/DictSAR-eps-converted-to.pdf> <./fig/DictSIR-eps-converted-to.pdf> 
+<./fig/ElectroFusionSIR-eps-converted-to.pdf>] (./SPNMF.bbl
 Underfull \hbox (badness 1584) in paragraph at lines 110--114
 []\OT1/ptm/m/n/8 G. Peeters, ``Au-to-matic clas-si-fi-ca-tion of large mu-si-ca
 l in-stru-ment
  []
 
-) [11] (./SPNMF.aux) ) 
+) [11 <./fig/ElectroFusionSAR-eps-converted-to.pdf>] (./SPNMF.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  6423 strings out of 493089
  100256 string characters out of 6134842
- 196716 words of memory out of 5000000
+ 195716 words of memory out of 5000000
  9780 multiletter control sequences out of 15000+600000
  39163 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,13n,38p,1761b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/
-8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
-0.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.p
-fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on SPNMF.pdf (11 pages, 887958 bytes).
+ 42i,13n,38p,1761b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
+w/times/utmri8a.pfb>
+Output written on SPNMF.pdf (11 pages, 888848 bytes).
 PDF statistics:
  496 PDF objects out of 1000 (max. 8388607)
  116 compressed objects within 2 object streams

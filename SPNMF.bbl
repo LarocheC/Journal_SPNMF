@@ -91,16 +91,6 @@ E.Vincent, N.Bertin, and R.Badeau, ``Adaptive harmonic spectral decomposition
   for multiple pitch estimation,'' \emph{IEEE Transactions on Audio, Speech,
   and Language Processing.}, vol.~18, no.~3, pp. 528--537, 2010.
 
-\bibitem{hennequin2011score}
-R.~Hennequin, B.~David, and R.~Badeau, ``Score informed audio source separation
-  using a parametric model of non-negative spectrogram,'' in \emph{Proc. of
-  IEEE ICASSP}, 2011.
-
-\bibitem{fritsch2013score}
-J.~Fritsch and M.~D. Plumbley, ``Score informed audio source separation using
-  constrained nonnegative matrix factorization and score synthesis,'' in
-  \emph{IEEE Proc. of ICASSP}, 2013, pp. 888--891.
-
 \bibitem{laroche2015structured}
 C.~Laroche, M.~Kowalski, H.~Papadopoulos, and G.~Richard, ``A structured
   nonnegative matrix factorization for source separation,'' in \emph{Proc. of
@@ -111,12 +101,6 @@ G.~Peeters, ``Automatic classification of large musical instrument databases
   using hierarchical classifiers with inertia ratio maximization,'' in
   \emph{Audio Engineering Society Convention 115}.\hskip 1em plus 0.5em minus
   0.4em\relax Audio Engineering Society, 2003.
-
-\bibitem{peeters2003hierarchical}
-G.~Peeters and X.~Rodet, ``Hierarchical gaussian tree with inertia ratio
-  maximization for the classification of large musical instruments databases,''
-  in \emph{Proc. of DAFx}.\hskip 1em plus 0.5em minus 0.4em\relax Citeseer,
-  2003.
 
 \bibitem{daudet2006review}
 L.~Daudet, ``A review on techniques for the extraction of transients in musical
@@ -129,9 +113,9 @@ A.~Klapuri, ``Multipitch analysis of polyphonic music and speech signals using
   Processing.}, vol.~16, no.~2, pp. 255--266, 2008.
 
 \bibitem{eronen2000musical}
-A.~Anti.~Eronen and A.~Klapuri, ``Musical instrument recognition using cepstral
-  coefficients and temporal features,'' in \emph{Proc. of IEEE ICASSP},
-  vol.~2.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2000, pp. II753--II756.
+A.~Eronen and A.~Klapuri, ``Musical instrument recognition using cepstral
+  coefficients and temporal features,'' in \emph{Proc. of IEEE ICASSP}, vol.~2,
+  2000, pp. II753--II756.
 
 \bibitem{salamon2012melody}
 J.~Salamon and E.~G{\'o}mez, ``Melody extraction from polyphonic music signals

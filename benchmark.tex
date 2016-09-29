@@ -9,12 +9,15 @@ In this section, we compare the proposed method with three state of the art meth
 
 For evaluation, we use the Medley-dB~\cite{bittner2014medleydb} database that is composed of polyphonic real-world music excerpts. It has $122$ music signals and $89$ of them contain percussive instruments, harmonic instruments and vocals. In our tests, the signals that do not contain a percussive part are excluded from evaluation. Because our goal is to perform a harmonic/percussive decomposition, the vocal part is omitted, as in~\cite{canadas2014percussive}. All the signals are sampled at $44.1kHz$.
 
+In our test, the training database of the SPNMF and the NMPCF is only composed of drums sounds. The database~\cite{bittner2014medleydb} contains a wide variety of percussive instruments that are not in the training database. However, we decided not to include these types of percussion in the training database as we wanted to have a comparable computation time between the four methods and to test the robustness of the supervised methods when a percussive signal is not in the database. 
+
+
 \subsection{State of the art methods}
 \label{soth}
 
-We compare here the SPNMF with the fixed dictionary matrix to three other recent state of the art methods: constrained NMF (CoNMF)~\cite{canadas2014percussive}, HPSS~\cite{fitzgerald2010harmonic} and NMPCF~\cite{kim2011nonnegative}. Constrained NMF and NMPCF are re-implemented in this paper and the HPSS implementation is taken from~\cite{DriedgerMueller14_TSMToolbox_DAFX}.
+We compare here the SPNMF with the fixed dictionary matrix to three other recent state of the art methods: constrained NMF (CoNMF)~\cite{canadas2014percussive}, MF~\cite{fitzgerald2010harmonic} and NMPCF~\cite{kim2011nonnegative}. Constrained NMF and NMPCF are re-implemented in this paper and the MF implementation is taken from~\cite{DriedgerMueller14_TSMToolbox_DAFX}.
 
-HPSS is a state of the art, versatile and computationally efficient method. It is widely used in the Music Information Retrieval community and is a good baseline for comparison. The constrained NMF algorithm is the most recent method for harmonic/percussive separation. It gives good results on a small scale test, however the robustness of the algorithm has not been tested yet in a large scale experiment. Finally the NMPCF, similarly to our method, uses a drum dictionary to guide the percussive estimation but the harmonic part is totally unconstrained. 
+MF is a state of the art, versatile and computationally efficient method. It is widely used in the Music Information Retrieval community and is a good baseline for comparison. The constrained NMF algorithm is the most recent method for harmonic/percussive separation. It gives good results on a small scale test, however the robustness of the algorithm has not been tested yet in a large scale experiment. Finally the NMPCF, similarly to our method, uses a drum dictionary to guide the percussive estimation but the harmonic part is totally unconstrained. 
 
 
 \subsection{Results} 
@@ -26,14 +29,14 @@ Figure~\ref{DatabaseSDR} shows that SPNMF obtains on average the highest separat
 
 The NMPCF, also based on trained data, is more robust than the SPNMF because the dictionary that extract the drums is not fixed. It allows more freedom and the results are more consistent even if some percussive instruments are not in the learning database. However, the mean score is lower than in the case of the SPNMF.
 
-The HPSS results obtained in our tests are unsatisfying. A wide variety of harmonic instruments in the database have really strong transients and rich harmonic spectra (distorted electric guitar, glockenspiel\ldots). Similarly, some percussive instruments have sparse basis functions localized in the low frequency range (bass drum, bongo, toms\ldots). Because of that, HPSS fails to extract these instruments in the appropriate harmonic/percussive parts. On average, it is able to correctly separate the percussive part (with relatively high SDR and the highest SIR), but it shows a very low SAR compared to the other methods. Similar outcomes have been observed in~\cite{canadas2014percussive} for HPSS.
+The MF results obtained in our tests are unsatisfying. A wide variety of harmonic instruments in the database have really strong transients and rich harmonic spectra (distorted electric guitar, glockenspiel\ldots). Similarly, some percussive instruments have sparse basis functions localized in the low frequency range (bass drum, bongo, toms\ldots). Because of that, HPSS fails to extract these instruments in the appropriate harmonic/percussive parts. On average, it is able to correctly separate the percussive part (with relatively high SDR and the highest SIR), but it shows a very low SAR compared to the other methods. Similar outcomes have been observed in~\cite{canadas2014percussive} for HPSS.
 
 The constrained NMF algorithm relies on the same hypothesis than HPSS and the results are lower than those of SPNMF. Some transients of the harmonic instruments are decomposed in the percussive part, and some percussive instruments (mainly in the low frequency range) are decomposed in the harmonic part. The method is still competitive in the large scale test. 
 
 %Compared to the other state of the art methods, the SPNMF obtains the higher average results on the selected database. 
 
 
-\begin{figure}[h]
+\begin{figure}[t]
 
   \centering 
   \includegraphics[width=9cm]{fig/DatabaseSDR.eps}
@@ -42,7 +45,7 @@ The constrained NMF algorithm relies on the same hypothesis than HPSS and the re
   
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[t]
 
   \centering 
   \includegraphics[width=9cm]{fig/DatabaseSIR.eps}
@@ -51,7 +54,7 @@ The constrained NMF algorithm relies on the same hypothesis than HPSS and the re
   
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[t]
 
   \centering 
   \includegraphics[width=9cm]{fig/DatabaseSAR.eps}
@@ -68,7 +71,7 @@ The constrained NMF algorithm relies on the same hypothesis than HPSS and the re
 
 The individual results on most of the songs of the database are similar to the average results. However, some interesting results were found on specific genres of music. Here we present the results obtained on the $14$ songs of the "Electronic/Fusion" music genre. These songs for the most part have a lot of silence and some solo parts played by only one instrument. Also, on some songs, the electronic drum repeats the same pattern during the whole song resulting in a very redundant drum part. The SDR results on the sub-database are displayed on Figure~\ref{ElectroFusionSDR} (the SIR and SAR results are represented in Appendix~\ref{appendix:sub_database} on Figures~\ref{ElectroFusionSIR} and~\ref{ElectroFusionSAR} respectively). 
 
-The HPSS method gives competitive results, with a low variance for the percussive results and a good overall mean. The HPSS obtains consistent results throughout the database. The results on the genre specific database are significantly better than the ones on the whole database. It reflects the fact that the harmonic/percussive instruments are easier to separate on this genre of songs. 
+The MF method gives competitive results, with a low variance for the percussive results and a good overall mean. The MF obtains consistent results throughout the database. The results on the genre specific database are significantly better than the ones on the whole database. It reflects the fact that the harmonic/percussive instruments are easier to separate on this genre of songs. 
  
 The results of the NMPCF are the lowest of the four methods. The unconstrained harmonic part gives the NMPCF a higher degree of freedom which decreases the score as the information is unequally distributed in the harmonic and percussive layers depending on the signal to be decomposed. 
 
@@ -92,18 +95,17 @@ On this sub-database, the SPNMF clearly outperforms the other methods. Similarly
 \label{discu}
 
 The results on the entire database give us insightful information.
-The HPSS and the constrained NMF rely on the hypothesis that harmonic instruments have sparse tonal spectrogram and that percussive instruments have flat transient spectra. They utilize two different methods to extract the instruments the complementary median filtering, and constraints on the NMF decomposition.
+The MF and the constrained NMF rely on the hypothesis that harmonic instruments have sparse tonal spectrogram and that percussive instruments have flat transient spectra. They utilize two different methods to extract the instruments the complementary median filtering, and constraints on the NMF decomposition.
 The NMPCF uses prior learning to extract the percussive instruments in a specific part while the harmonic instruments are decomposed in an unconstrained layer. 
 The SPNMF combines both techniques from the previous state of the art methods. It uses thus prior learning to extract the percussive instruments while the harmonic parts are extracted by the sparse PNMF components.
 
 
 
-Each of the tested methods has its own advantages and  drawbacks. The HPSS is the easiest and the fastest method to implement and it does not require any hyper-parameter tuning. The results of the HPSS can be competitive when the harmonic instruments have smooth transients (i.e., sustained instruments such as the flute, the violin) and the percussive instruments have flat spectra (i.e., cymbal, snare drum). However, when the harmonic instruments have strong transients (glockenspiel, piano) and the percussive instruments have sparse spectra (bass drum, bongo) the HPSS does not give good results. 
+Each of the tested methods has its own advantages and  drawbacks. The HPSS is the easiest and the fastest method to implement and it does not require any hyper-parameter tuning. The results of the MF can be competitive when the harmonic instruments have smooth transients (i.e., sustained instruments such as the flute, the violin) and the percussive instruments have flat spectra (i.e., cymbal, snare drum). However, when the harmonic instruments have strong transients (glockenspiel, piano) and the percussive instruments have sparse spectra (bass drum, bongo) the HPSS does not give good results. 
 
-The constrained NMF is based on the same hypothesis than the HPSS and has the same issue. Fine tuning of the hyper-parameters can alleviate the problem mentioned above but it is a tedious process and is not possible in the case of blind source separation. Our tests on a large database show that the constrained NMF is not robust enough for a wide variability of the analyzed signals.
+The constrained NMF is based on the same hypothesis than the MF and has the same issue. Fine tuning of the hyper-parameters can alleviate the problem mentioned above but it is a tedious process and is not possible in the case of blind source separation. Our tests on a large database show that the constrained NMF is not robust enough for a wide variability of the analyzed signals.
 
-Contrary to the results obtained in~\cite{canadas2014percussive} the NMPCF algorithm gives competitive results compare to the HPSS and the constrained NMF. However, as it uses training to guide the decomposition process, it requires a wide variety of information to perform on a large scale test. If the training database cannot contain sufficient information, the results will not be satisfying. 
+Contrary to the results obtained in~\cite{canadas2014percussive} the NMPCF algorithm gives competitive results compare to the MF and the constrained NMF. However, as it uses training to guide the decomposition process, it requires a wide variety of information to perform on a large scale test. If the training database cannot contain sufficient information, the results will not be satisfying. 
 
 On the large scale test, the SPNMF outperforms the other methods. It is able to extract the harmonic and the percussive instruments with higher score for the SDR, the SAR and the SIR. Using prior dictionary learning with a physical model on the harmonic instruments help to separate sources with much better accuracy.
 
-In our test, the training database of the SPNMF and the NMPCF is only composed of drums sounds. The database~\cite{bittner2014medleydb} contains a wide variety of percussive instruments that are not in the training database. However, we decided not to include these types of percussion in the training database as we wanted to have a comparable computation time between the four methods and to test the robustness of the supervised methods when a percussive signal is not in the database. 

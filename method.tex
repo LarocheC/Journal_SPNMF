@@ -25,7 +25,7 @@ Another very similar approach is the ONMF~\cite{choi}. It consists in solving th
 \end{align}%
 In this method, orthogonality between nonnegative basis functions is enforced during the optimization process. In theory, it seems that the PNMF and the ONMF lead to similar decompositions, as the $W$ matrix estimated by the PNMF is almost orthogonal (i.e., $\|W^{T}W-I_{k}\|^{2}$ is small). However in practice, enforcing the orthogonality between the base at every iteration is a constraint too strong to decompose audio signal~\cite{laroche2015structured}. 
 
-The sparsity of the dictionary matrix is an interesting property for the decomposition of audio signals and especially for the decomposition of harmonic instruments with very localized harmonic spectra. Contrary to the NMF, the sparsity of the PNMF is an inherent features of the decomposition. These key properties of the PNMF motivated us to decompose the harmonic instruments using orthogonal basis functions.
+The sparsity of the dictionary matrix is an interesting property for the decomposition of audio signals and especially for the decomposition of harmonic instruments with very localized harmonic spectra. Contrary to the NMF, the sparsity of the PNMF is an inherent features of the decomposition and contrary to a regularization term, there is no hyper parameter tuning. These key properties of the PNMF motivated us to decompose the harmonic instruments using orthogonal basis functions.
 
 
 \subsection{Principle of the SPNMF}
@@ -41,7 +41,11 @@ V \approx \tilde{V}= W_{H}W_{H}^{T}V + W_{P} H_{P}.
 The data matrix is approximated by an almost orthogonal sparse part that codes the harmonic instruments $V_H = W_HW_H^T V$ and a non constrained NMF part that codes the percussive instruments $V_P = W_PH_P$. The main advantage of the SPNMF results is in the fact that the method has few parameters compared to constrained NMF~\cite{canadas2014percussive}and NMPCF~\cite{kim2011nonnegative} while still obtaining similar results~\cite{laroche2015structured}. 
 
 
-\subsection{Algorithm Optimization}
+%\subsection{Using regularized NMF for the harmonic part}
+
+
+
+\subsection{Optimization Algorithm}
 
 In order to achieve such a decomposition, we can use a measure of fit $D(x|y)$ between the data matrix $V$ and the estimated matrix $\tilde{V}$. $D(x|y)$ is a scalar cost function and in this article we compare in Section \ref{setup:divergence} the use of the Euclidean distance (Euc), the Kullback Leiber (KL) divergence and the Itakura Saito (IS) divergence which are three commonly used divergences in the NMF framework.
 
@@ -86,7 +90,7 @@ The optimization of the SPNMF algorithm is done sequentially, as described in Al
 
 A fully unsupervised SPNMF model does not allow for a satisfying harmonic/percussive source separation~\cite{laroche2015structured}. To alleviate this problem, we use here a fixed drum dictionary $W_p$ for the percussive part of the SPNMF which is created using the drum database ENST-Drums~\cite{gillet2006enst}. In this database three professional drum players specialized in a specific type of music have been recorded. Each drummer uses a specific drum set from a small one (two toms and two cymbals) to a full rock drum kit (four toms and five cymbals). 
 
-Two different ways can be used to build a dictionary. The first one is to perform a NMF decomposition on a large database~\cite{jaureguiberry2011adaptation}. The recording of the three drummers are concatenated independently to obtain three long audio drum signals of each drum kit. We execute a NMF on the spectrogram of the signals. The rank of the decomposition is chosen as $k=12$ for each of the signals. We consider that each element of the drum kit is represented by two basis functions. This method is effective at giving a dictionary specific to an instrument and the size of the dictionary is maintained low so it does not increase the computation time. However, the template of the dictionary does not represent a single element of the drum kit so it is not possible to perform direct drum transcription.
+Two different ways can be used to build a dictionary. The first one is to perform a NMF decomposition on a large database~\cite{jaureguiberry2011adaptation}. The rank of factorization is an important learning variable that will be discussed in a later section. This method is effective at giving a dictionary specific to an instrument and the size of the dictionary is maintained low so it does not increase the computation time. However, the template of the dictionary does not represent a single element of the drum kit so it is not possible to perform direct drum transcription.
 
 A second way to build the dictionary is to directly use the STFT of a drum signal~\cite{wudrum}. The ENST-Drum database contains audio files where elements of the drum kit are played independently and that we used to build another types of drum dictionary. This method allows having a specific dictionary, yet the matrix is redundant and very large which increases the computation time. Both learning methods are compared in Section \ref{setup:dictionary}. \\
 
@@ -121,9 +125,9 @@ The SPNMF algorithm with the fixed dictionary matrix is described by Algorithm \
 
 The percussive signal $x_p(t)$ is synthesized using the magnitude percussive spectrogram $V_P = W_PH_P$. To reconstruct the phase of the percussive part, we use a generalized Wiener filter~\cite{liutkus:hal-01110028} to create a percussive mask as:
 \begin{equation}
-\mathcal{M}_P = \frac{V_P^\alpha}{V_M^\alpha + V_P^\alpha},
+\mathcal{M}_P = \frac{V_P^2}{V_M^2 + V_P^2},
 \end{equation} 
-\noindent, where $\alpha \in (1,2)$. To retrieve the percussive signal as 
+\noindent, To retrieve the percussive signal as 
 \begin{equation}
 x_p(t) = InverseSTFT(\mathcal{M}_P \otimes X),
 \end{equation}
@@ -131,7 +135,7 @@ x_p(t) = InverseSTFT(\mathcal{M}_P \otimes X),
 
 Similarly for the harmonic part, we obtain:
 \begin{equation}\label{percuwiener}
-\mathcal{M}_H = \frac{V_H^\alpha}{V_M^\alpha + V_P^\alpha},
+\mathcal{M}_H = \frac{V_H^2}{V_M^2 + V_P^2},
 \end{equation}
 and:
 \begin{equation}

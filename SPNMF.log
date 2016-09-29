@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.2)  7 APR 2016 17:19
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.2)  27 SEP 2016 16:08
 entering extended mode
 **SPNMF.tex
 (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\SPNMF.tex
@@ -447,40 +447,33 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 
 
 ])
-(C:\Users\laroche\Documents\GitHub\Journal_SPNMF\background.tex) [2]
-(C:\Users\laroche\Documents\GitHub\Journal_SPNMF\method.tex
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+(C:\Users\laroche\Documents\GitHub\Journal_SPNMF\background.tex [2])
+(C:\Users\laroche\Documents\GitHub\Journal_SPNMF\method.tex [3]
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 ) (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\validation.tex [4]
 Package epstopdf Info: Source file: <fig/synthetictestspectrogram.eps>
-(epstopdf)                    date: 2016-04-01 10:36:06
-(epstopdf)                    size: 22479 bytes
+(epstopdf)                    date: 2016-09-19 16:22:41
+(epstopdf)                    size: 24667 bytes
 (epstopdf)             Output file: <fig/synthetictestspectrogram-eps-converted
 -to.pdf>
-(epstopdf)                    date: 2016-04-01 10:36:06
-(epstopdf)                    size: 12244 bytes
+(epstopdf)                    date: 2016-09-26 16:21:35
+(epstopdf)                    size: 10085 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig/synthetictestspectrogra
 m-eps-converted-to.pdf fig/synthetictestspectrogram.eps>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/synthetictestspectrogram-eps-converted-to.pdf, id=30, 1446.40375pt x 815.0
-45pt>
+<fig/synthetictestspectrogram-eps-converted-to.pdf, id=31, 1386.17876pt x 832.1
+0875pt>
 File: fig/synthetictestspectrogram-eps-converted-to.pdf Graphic file (type pdf)
 
  <use fig/synthetictestspectrogram-eps-converted-to.pdf>
 Package pdftex.def Info: fig/synthetictestspectrogram-eps-converted-to.pdf used
  on input line 19.
-(pdftex.def)             Requested size: 256.0748pt x 144.28906pt.
+(pdftex.def)             Requested size: 256.0748pt x 153.70915pt.
 
 Overfull \hbox (4.0748pt too wide) in paragraph at lines 19--21
  [][] 
@@ -496,13 +489,15 @@ Package epstopdf Info: Source file: <fig/WHcomp.eps>
 .pdf fig/WHcomp.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
-<fig/WHcomp-eps-converted-to.pdf, id=31, 1446.40375pt x 815.045pt>
+<fig/WHcomp-eps-converted-to.pdf, id=32, 1446.40375pt x 815.045pt>
 File: fig/WHcomp-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/WHcomp-eps-converted-to.pdf>
 Package pdftex.def Info: fig/WHcomp-eps-converted-to.pdf used on input line 28.
 
 (pdftex.def)             Requested size: 426.79134pt x 240.49837pt.
+ [5 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/synthetictestspectrogr
+am-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/RankOfFact.eps>
 (epstopdf)                    date: 2016-04-01 10:36:06
 (epstopdf)                    size: 11660 bytes
@@ -511,24 +506,21 @@ Package epstopdf Info: Source file: <fig/RankOfFact.eps>
 (epstopdf)                    size: 7924 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig/RankOfFact-eps-converte
 d-to.pdf fig/RankOfFact.eps>
-(epstopdf)             \includegraphics on input line 63.
+(epstopdf)             \includegraphics on input line 69.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/RankOfFact-eps-converted-to.pdf, id=32, 1446.40375pt x 815.045pt>
+<fig/RankOfFact-eps-converted-to.pdf, id=42, 1446.40375pt x 815.045pt>
 File: fig/RankOfFact-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/RankOfFact-eps-converted-to.pdf>
 Package pdftex.def Info: fig/RankOfFact-eps-converted-to.pdf used on input line
- 63.
+ 69.
 (pdftex.def)             Requested size: 256.0748pt x 144.28906pt.
 
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 63--65
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 69--71
  [][] 
  []
 
-[5 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/synthetictestspectrogra
-m-eps-converted-to.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/Ra
-nkOfFact-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/DivergenceFrame1024.eps>
 (epstopdf)                    date: 2016-04-01 10:36:05
 (epstopdf)                    size: 31904060 bytes
@@ -538,18 +530,17 @@ df>
 (epstopdf)                    size: 79748 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig/DivergenceFrame1024-eps
 -converted-to.pdf fig/DivergenceFrame1024.eps>
-(epstopdf)             \includegraphics on input line 89.
+(epstopdf)             \includegraphics on input line 95.
 Package epstopdf Info: Output file is already uptodate.
-
-<fig/DivergenceFrame1024-eps-converted-to.pdf, id=49, 1445.4pt x 845.1575pt>
+<fig/DivergenceFrame1024-eps-converted-to.pdf, id=43, 1445.4pt x 845.1575pt>
 File: fig/DivergenceFrame1024-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/DivergenceFrame1024-eps-converted-to.pdf>
 Package pdftex.def Info: fig/DivergenceFrame1024-eps-converted-to.pdf used on i
-nput line 89.
+nput line 95.
 (pdftex.def)             Requested size: 256.0748pt x 149.72311pt.
 
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 89--91
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 95--97
  [][] 
  []
 
@@ -562,26 +553,23 @@ df>
 (epstopdf)                    size: 81822 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig/DivergenceFrame2048-eps
 -converted-to.pdf fig/DivergenceFrame2048.eps>
-(epstopdf)             \includegraphics on input line 99.
+(epstopdf)             \includegraphics on input line 105.
 Package epstopdf Info: Output file is already uptodate.
-<fig/DivergenceFrame2048-eps-converted-to.pdf, id=50, 1445.4pt x 845.1575pt>
+<fig/DivergenceFrame2048-eps-converted-to.pdf, id=44, 1445.4pt x 845.1575pt>
 File: fig/DivergenceFrame2048-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/DivergenceFrame2048-eps-converted-to.pdf>
 Package pdftex.def Info: fig/DivergenceFrame2048-eps-converted-to.pdf used on i
-nput line 99.
+nput line 105.
 (pdftex.def)             Requested size: 256.0748pt x 149.72311pt.
 
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 99--101
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 105--107
  [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/WHcomp-eps-converted-t
-o.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/DivergenceFrame1024
--eps-converted-to.pdf>]
+[6 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/WHcomp-eps-converted-to
+.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/RankOfFact-eps-conve
+rted-to.pdf>]
 Package epstopdf Info: Source file: <fig/DictSDR.eps>
 (epstopdf)                    date: 2016-04-01 10:36:05
 (epstopdf)                    size: 30705218 bytes
@@ -590,20 +578,21 @@ Package epstopdf Info: Source file: <fig/DictSDR.eps>
 (epstopdf)                    size: 64947 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig/DictSDR-eps-converted-t
 o.pdf fig/DictSDR.eps>
-(epstopdf)             \includegraphics on input line 117.
+(epstopdf)             \includegraphics on input line 127.
 Package epstopdf Info: Output file is already uptodate.
- <fig/DictSDR-eps-converted-to.pdf, id=95, 1445.4pt x 815.045pt>
+ <fig/DictSDR-eps-converted-to.pdf, id=61, 1445.4pt x 815.045pt>
 File: fig/DictSDR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/DictSDR-eps-converted-to.pdf>
-Package pdftex.def Info: fig/DictSDR-eps-converted-to.pdf used on input line 11
+Package pdftex.def Info: fig/DictSDR-eps-converted-to.pdf used on input line 12
 7.
 (pdftex.def)             Requested size: 227.62204pt x 128.34538pt.
 )
 (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\benchmark.tex [7 <C:/Users/lar
-oche/Documents/GitHub/Journal_SPNMF/fig/DivergenceFrame2048-eps-converted-to.pd
-f> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/DictSDR-eps-converted-t
-o.pdf>]
+oche/Documents/GitHub/Journal_SPNMF/fig/DivergenceFrame1024-eps-converted-to.pd
+f> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/DivergenceFrame2048-eps
+-converted-to.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/DictSDR
+-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/DatabaseSDR.eps>
 (epstopdf)                    date: 2016-04-01 10:36:05
 (epstopdf)                    size: 30705222 bytes
@@ -614,7 +603,8 @@ Package epstopdf Info: Source file: <fig/DatabaseSDR.eps>
 ed-to.pdf fig/DatabaseSDR.eps>
 (epstopdf)             \includegraphics on input line 39.
 Package epstopdf Info: Output file is already uptodate.
- <fig/DatabaseSDR-eps-converted-to.pdf, id=167, 1445.4pt x 815.045pt>
+
+<fig/DatabaseSDR-eps-converted-to.pdf, id=167, 1445.4pt x 815.045pt>
 File: fig/DatabaseSDR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/DatabaseSDR-eps-converted-to.pdf>
@@ -670,9 +660,10 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 57--59
  [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+[8 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/DatabaseSDR-eps-convert
+ed-to.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/DatabaseSIR-eps
+-converted-to.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/Databas
+eSAR-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/ElectroFusionSDR.eps>
 (epstopdf)                    date: 2016-04-01 10:36:06
 (epstopdf)                    size: 30705227 bytes
@@ -684,7 +675,8 @@ Package epstopdf Info: Source file: <fig/ElectroFusionSDR.eps>
 nverted-to.pdf fig/ElectroFusionSDR.eps>
 (epstopdf)             \includegraphics on input line 85.
 Package epstopdf Info: Output file is already uptodate.
-<fig/ElectroFusionSDR-eps-converted-to.pdf, id=170, 1445.4pt x 815.045pt>
+
+<fig/ElectroFusionSDR-eps-converted-to.pdf, id=266, 1445.4pt x 815.045pt>
 File: fig/ElectroFusionSDR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/ElectroFusionSDR-eps-converted-to.pdf>
@@ -696,11 +688,7 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 85--87
  [][] 
  []
 
-[8 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/DatabaseSDR-eps-convert
-ed-to.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/DatabaseSIR-eps
--converted-to.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/Databas
-eSAR-eps-converted-to.pdf>])
-(C:\Users\laroche\Documents\GitHub\Journal_SPNMF\conclusion.tex)
+) (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\conclusion.tex)
 (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\appendix.tex [9 <C:/Users/laro
 che/Documents/GitHub/Journal_SPNMF/fig/ElectroFusionSDR-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/DictSAR.eps>
@@ -786,14 +774,11 @@ Overfull \hbox (4.0748pt too wide) in paragraph at lines 98--99
  [][] 
  []
 
-)
-Underfull \vbox (badness 7869) has occurred while \output is active []
-
- [10 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/DictSAR-eps-converted
--to.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/DictSIR-eps-conve
-rted-to.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/ElectroFusion
-SIR-eps-converted-to.pdf>] (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\SPN
-MF.bbl
+) [10 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/DictSAR-eps-converte
+d-to.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/DictSIR-eps-conv
+erted-to.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/ElectroFusio
+nSIR-eps-converted-to.pdf>]
+(C:\Users\laroche\Documents\GitHub\Journal_SPNMF\SPNMF.bbl
 Underfull \hbox (badness 1584) in paragraph at lines 100--104
 []\OT1/ptm/m/n/8 G. Peeters, ``Au-to-matic clas-si-fi-ca-tion of large mu-si-ca
 l in-stru-ment
@@ -801,15 +786,18 @@ l in-stru-ment
 
 ) [11 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/ElectroFusionSAR-eps
 -converted-to.pdf>] (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\SPNMF.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  6100 strings out of 494045
  94629 string characters out of 3148382
- 183670 words of memory out of 3000000
+ 185671 words of memory out of 3000000
  9266 multiletter control sequences out of 15000+200000
  39163 words of font info for 74 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 42i,13n,38p,1761b,394s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,13n,38p,1822b,394s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fon
@@ -826,9 +814,9 @@ s/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
 mbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on SPNMF.pdf (11 pages, 917158 bytes).
+Output written on SPNMF.pdf (11 pages, 920094 bytes).
 PDF statistics:
- 493 PDF objects out of 1000 (max. 8388607)
+ 492 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

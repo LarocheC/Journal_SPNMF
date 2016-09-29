@@ -6,14 +6,14 @@ In this section we conduct a set of experiments to assess the merits of the prop
 
 \subsection{Synthetic Tests}\label{SynthTest}
 
-To illustrate how the straight SPNMF (Algorithme~\ref{AlgoMultipl}) works, we use a simple synthetic signal. The test signal models a mix of harmonic and percussive instruments. The harmonic part is simulated by a sum of sine waves that overlap in time and frequency. The first signal simulates a $C(3)$ with fundamental frequency $f_0 = 131$~Hz, the other one a $B(4)$ with $f_0 = 492$~Hz. To simulate the percussive part, we add $0.1$~s of Gaussian white noise for the first two second. For the last two seconds, we add $0.3$~s of Gaussian white noise filtered by a high-pass filter. The signal is $5$~s long and the sampling rate is $4000$~Hz. We compute the Short Time Fourier Transform (STFT) with a $512$ sample-long ($0.128$~s) Hann analysis window and a $50\%$ overlap. The spectrogram of the signal is represented in Figure~\ref{SpectroSynth}. As our input signal has four sources, we expect that one source can be represented by one component and therefore, a model of rank 4 ($k=4$) should adequately model the signals. More precisely, for the NMF and the PNMF we chose $k=4$ and for the SPNMF $k'=2$ and $e=2$. The choice of the rank of factorization is an important variable of the problem. In this case, we select it in order to illustrate the performance of the method. We will further discuss the importance of the choice of the rank of factorization in Section~\ref{setup:rank}. We compare the SPNMF with the PNMF and the NMF using the KL distance with multiplicative update rules as stated in~\cite{fevotte2009nonnegative}. The three algorithms are initialized with the same random positive matrices $W_{ini} \in \mathbb{R}^{n \times k}$  and $ H_{ini} \in \mathbb{R}^{k \times m}_{+} $.
+To illustrate how the SPNMF (Algorithm~\ref{AlgoMultipl}) works, we use a simple synthetic signal. The test signal models a mix of harmonic and percussive instruments. The harmonic part is simulated by a sum of sine waves that overlap in time and frequency. The first signal simulates a $C(3)$ with fundamental frequency $f_0 = 131$~Hz, the other one a $B(4)$ with $f_0 = 492$~Hz. To simulate the percussive part, we add $0.1$~s of Gaussian white noise for the first two second. For the last two seconds, we add $0.3$~s of Gaussian white noise filtered by a high-pass filter. The signal is $5$~s long and the sampling rate is $4000$~Hz. We compute the Short Time Fourier Transform (STFT) with a $512$ sample-long ($0.128$~s) Hann analysis window and a $50\%$ overlap. The spectrogram of the signal is represented in Figure~\ref{SpectroSynth}. As our input signal has four sources, we expect that one source can be represented by one component and therefore, a model of rank 4 ($k=4$) should adequately model the signals. More precisely, for the NMF and the PNMF we chose $k=4$ and for the SPNMF the rank of the harmonic part is $k_H=2$ and the rank of the percussive part is $k_P=2$. The choice of the rank of factorization is an important variable of the problem. In this case, we select it in order to illustrate the performance of the method. We will further discuss the importance of the choice of the rank of factorization in Section~\ref{setup:rank}. We compare the SPNMF with the PNMF and the NMF using the KL distance with multiplicative update rules as stated in~\cite{fevotte2009nonnegative}. The three algorithms are initialized with the same random positive matrices $W_{ini} \in \mathbb{R}^{n \times k}$  and $ H_{ini} \in \mathbb{R}^{k \times m}_{+} $.
 
 The results of the decomposition are presented in Figure~\ref{resultONMF2}. The dictionary and activation matrices show the separation performance of the three methods. The NMF does not separate correctly the four components. By looking at the columns $2$ and $3$ of the dictionary matrix $W$ on Figure~\ref{resultONMF2}, the filtered Gaussian white noise and the $C(3)$ are separated in the same components which does not correspond to the expected result.
 For the PNMF, the orthogonal components do not succeed to represent the two noises correctly. They are extracted in the same component and the total reconstruction error of the PNMF is high.
 In this example, the SPNMF extracts the four components with the highest accuracy and performs better than the other methods. The two harmonic components are extracted in the orthogonal part (i.e., the columns $1$ and $2$ of the dictionary matrix) while the percussive components are extracted by the NMF part (columns $3$ and $4$). The SPNMF outperforms the two other methods and shows therefore the potential of the proposed algorithm for harmonic/percussive source separation.
 %
 
-\begin{figure}[htb]
+\begin{figure}[t]
 
   \centering 
   \includegraphics[width=9cm]{fig/synthetictestspectrogram}
@@ -47,6 +47,12 @@ Note that the database we use for tuning the proposed method is different from t
 In order to evaluate and compare the results we then compute the common Signal to Distortion Ratio/Signal to Interference Ration/Signal to Artefact Ratio (SDR/SIR/SAR) metrics for blind source separation with the BSS-Eval toolbox~\cite{bsseval}. 
 
 
+
+\subsection{Comparison between PNMF and regularized NMF}
+
+
+
+
 \subsection{Robustness wrt the rank of the harmonic part}
 \label{setup:rank}
 
@@ -57,7 +63,7 @@ The optimization process of SPNMF is straightforward thanks to the robustness of
 
 
 
-\begin{figure}[htb]
+\begin{figure}[t]
 
   \centering 
   \includegraphics[width=9cm]{fig/RankOfFact}
@@ -83,7 +89,7 @@ In the case of a long window, Figure~\ref{frame2048} shows that the IS divergenc
 For the rest of the article, we will use the SPNMF algorithm with the IS divergence and a window size of 2048 samples for the STFT.
 
 
-\begin{figure}[htb]
+\begin{figure}[t]
 
   \centering 
   \includegraphics[width=9cm]{fig/DivergenceFrame1024}
@@ -93,7 +99,7 @@ For the rest of the article, we will use the SPNMF algorithm with the IS diverge
 \end{figure}
 
 
-\begin{figure}[htb]
+\begin{figure}[t]
 
   \centering 
   \includegraphics[width=9cm]{fig/DivergenceFrame2048}
@@ -107,11 +113,17 @@ For the rest of the article, we will use the SPNMF algorithm with the IS diverge
 \subsection{Influence of the dictionary}
 \label{setup:dictionary}
 
-We now discuss the influence of the dictionary. We compare the two methods described in Section~\ref{fixedict}. In addition to that, we test a third dictionary is made by the concatenation of the first two dictionaries. The more information contained in the dictionary, the likely the decomposition to properly extract the percussive part. On some signals, the algorithm is not able to extract a lot of energy from the mixture as no atom from the dictionary correspond to any of the percussive signal.
-We display on Figure~\ref{resultsDict} the SDR results of the decomposition using the NMF dictionary, the STFT dictionary as well as the concatenated dictionary. The SAR and SIR are postponed in Appendix~\ref{appendix:dict} on Figures~\ref{resultsDictSAR} and~\ref{resultsDictSIR} respectively. In our tests, the results with the concatenated dictionary give the highest score. Indeed, the concatenated dictionary contains the largest amount of information and as a result, obtains the best separation. As the dictionary is fixed, it is important to have a large dictionary to be able to extract a large type of percussive instruments. The STFT and the NMF dictionaries give results similar to each other. The two dictionaries contain complementary information that allow for a better separation while they are concatenated. In the tests we will conduct later in Section~\ref{sec:stateoftheart} on a large database, we will use the concatenated dictionary as it contains the largest amount of information. 
+%We now discuss the influence of the dictionary. We compare the two methods described in Section~\ref{fixedict}. In addition to that, we test a third dictionary is made by the concatenation of the first two dictionaries. The more information contained in the dictionary, the likely the decomposition to properly extract the percussive part. On some signals, the algorithm is not able to extract a lot of energy from the mixture as no atom from the dictionary correspond to any of the percussive signal.
+%We display on Figure~\ref{resultsDict} the SDR results of the decomposition using the NMF dictionary, the STFT dictionary as well as the concatenated dictionary. The SAR and SIR are postponed in Appendix~\ref{appendix:dict} on Figures~\ref{resultsDictSAR} and~\ref{resultsDictSIR} respectively. In our tests, the results with the concatenated dictionary give the highest score. Indeed, the concatenated dictionary contains the largest amount of information and as a result, obtains the best separation. As the dictionary is fixed, it is important to have a large dictionary to be able to extract a large type of percussive instruments. The STFT and the NMF dictionaries give results similar to each other. The two dictionaries contain complementary information that allow for a better separation while they are concatenated. In the tests we will conduct later in Section~\ref{sec:stateoftheart} on a large database, we will use the concatenated dictionary as it contains the largest amount of information. 
+
+We now discuss the different methods to construct the drum dictionary. As the dictionary is fixed, it is important to find a good compromise with the size and the quantity of information contained. 
+Two types of audio recordings are available, the first type contains drum hits of the independents element of the drum kit. We concatenated the recording of the drum hits of each drummer in three $10$~min long audio signals. The other type of audio files are drum phrases. We created three signals of different length ($6$~min, $12$~min, $30$~min) for the three drummers for a total of $9$ audio signal. 
+Finally, we compute the STFT of these $12$ signals and we execute a NMF on each of the spectrograms to obtain various dictionaries. The rank of the decomposition is chosen as $k \in [6,9,12,25,50,100,200,500]$. In total, $108$ dictionaries are created. 
+
+Multiple tests are run in order to evaluate the influence of each of the parameters for the training step. We display on Figure~\ref{resultsDict} the mean SDR, SIR and SAR results of the decomposition using the NMF dictionary computer on the drum hits for the drummer $1$
 
 
-\begin{figure}[htb]
+\begin{figure}[t]
 
   \centering 
   \includegraphics[width=8cm]{fig/DictSDR}

@@ -120,15 +120,37 @@ We now discuss the different methods to construct the drum dictionary. As the di
 Two types of audio recordings are available, the first type contains drum hits of the independents element of the drum kit. We concatenated the recording of the drum hits of each drummer in three $10$~min long audio signals. The other type of audio files are drum phrases. We created three signals of different length ($6$~min, $12$~min, $30$~min) for the three drummers for a total of $9$ audio signal. 
 Finally, we compute the STFT of these $12$ signals and we execute a NMF on each of the spectrograms to obtain various dictionaries. The rank of the decomposition is chosen as $k \in [6,9,12,25,50,100,200,500]$. In total, $108$ dictionaries are created. 
 
-Multiple tests are run in order to evaluate the influence of each of the parameters for the training step. We display on Figure~\ref{resultsDict} the mean SDR, SIR and SAR results of the decomposition using the NMF dictionary computer on the drum hits for the drummer $1$
+Multiple tests are run in order to evaluate the influence of each of the parameters for the training step. The drum kit of each drummer are very different and they provide different information for the decomposition. We display on Figure~\ref{resultsDict} the mean SDR, SIR and SAR results of the average results for each drummer. Figure \ref{resultsDict} shows that the information of the drummer $2$ is the most relevant for our test. The drummer $1$ plays on a very small drum kit that does not contains enough information. Finally the drummer $3$ plays uses a large drumset with many elements that are not usually present in most recording and because of that the dictionary is too diverse.
 
+Now the rest of the experiment are conducted using the dictionaries constructed on the audio files from drummer $2$. Figure \ref{resultsDictLength} show the influence of the length of the training data on the results. Above $6$~min of training data, the quality of the decomposition decreases so in the rest of the experiment, we used the dictionaries computed of these data.
+
+Finally, Figure \ref{resultsDictD2} show the results wrt the rank of factorization. The best results are obtained for $k=12$. Bellow that, the dictionary is too small and not enough information is captured. Inversely, if the rank is chosen too big during the learning process, the dictionary does not capture the percussive part satisfyingly during the decomposition.
+
+For the rest of the article, we will use a dictionary constructed using a $6$~min long audio signal from the drummer $2$ with $k=12$.
 
 \begin{figure}[t]
 
   \centering 
-  \includegraphics[width=8cm]{fig/DictSDR}
+  \includegraphics[width=8cm]{fig/ResultsMeanRank}
 %  \vspace{2.0cm}
-  \caption{\label{resultsDict} SDR of harmonic (left bar)/percussive (right bar) estimated sources on the SiSec database with a STFT dictionary, a NMF dictionary and the concatenation of the two.}
+  \caption{\label{resultsDict} Mean SDR SIR and SAR results averaged for each drummer on the SiSec database.}
+  
+\end{figure}
+
+\begin{figure}[t]
+
+  \centering 
+  \includegraphics[width=8cm]{fig/ResultsMeanLength}
+%  \vspace{2.0cm}
+  \caption{\label{resultsDictLength} Mean SDR SIR and SAR results for the dictionaries learned with different signal length on the SiSec database.}
+  
+\end{figure}
+\begin{figure}[t]
+
+  \centering 
+  \includegraphics[width=8cm]{fig/ResultsDictDrummer2}
+%  \vspace{2.0cm}
+  \caption{\label{resultsDictD2} Mean SDR SIR and SAR results for various rank of factorization on the SiSec database.}
   
 \end{figure}
 

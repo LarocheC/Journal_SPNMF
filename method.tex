@@ -3,31 +3,6 @@
 
 In this section we present our semi-supervised algorithm for harmonic/percussive source separation.
 
-\subsection{Presentation of the orthogonal and projective NMF}\label{subsec:PNMF}
-
-
-Using a squared Euclidean distance between the data matrix $V$ and its approximation $WH$, the NMF problem reads:
-$$
-\min_{W,H\geq 0} \|V - WH\|^2\ , 
-$$
-where $\|.\|^{2}$ is the squared Euclidean distance.
-
-The aim of the PNMF is to find a non negative projection matrix $P \in \mathbb{R}_{+}^{n \times n}$ such that $V \approx \tilde{V} = PV$. In~\cite{yuanOja2005} Yuan \& al. propose to seek $P$ as an approximative projection matrix under the form $P = WW^{T}$ with $W \in \mathbb{R}_{+}^{n \times k}$ with $ k \leqslant n $. The PNMF problem reads : 
-\begin{equation}\label{EqPnmf}
-\min_{W \geqslant 0} ||V - WW^{T}V||^2 
-\end{equation}
-
-PNMF is similar to the NMF problem and can be simply obtained by replacing the activation matrix $H$ by $W^TV$. It is shown in~\cite{YangOja10} that the PNMF gives a much sparser decomposition than the NMF.
-
-Another very similar approach is the ONMF~\cite{choi}. It consists in solving the following problem: 
-\begin{align}
-\min_{W \geqslant 0, H \geqslant0} ||V - WH||^2 \quad   \text{s.t}.\quad W^{T}W=I_{k} 
-\end{align}%
-In this method, orthogonality between nonnegative basis functions is enforced during the optimization process. In theory, it seems that the PNMF and the ONMF lead to similar decompositions, as the $W$ matrix estimated by the PNMF is almost orthogonal (i.e., $\|W^{T}W-I_{k}\|^{2}$ is small). However in practice, enforcing the orthogonality between the base at every iteration is a constraint too strong to decompose audio signal~\cite{laroche2015structured}. 
-
-The sparsity of the dictionary matrix is an interesting property for the decomposition of audio signals and especially for the decomposition of harmonic instruments with very localized harmonic spectra. Contrary to the NMF, the sparsity of the PNMF is an inherent features of the decomposition and contrary to a regularization term, there is no hyper parameter tuning. These key properties of the PNMF motivated us to decompose the harmonic instruments using orthogonal basis functions.
-
-
 \subsection{Principle of the SPNMF}
 
 The orthogonal basis functions of the PNMF are not flexible enough to decompose a complex audio signal. As stated in~\cite{canadas2014percussive}, harmonic instruments have sparse basis functions whereas percussive instruments have much flatter spectra. As the columns of $W$ are orthogonal, when two sources overlap in the Time-Frequency (TF) plane only one basis function will represent the mixture which is not adequate for efficient separation. To overcome this problem, we propose to add a standard NMF decomposition term to the PNMF. We can expect that most of the harmonic components will be represented by the orthogonal part while the percussive ones will be the regular NMF components. Using a similar model to preliminary work~\cite{laroche2015structured}, let $V$ be the magnitude spectrogram of the input data. The model is then given by

@@ -16,8 +16,14 @@ V \approx \tilde{V}= W_{H}W_{H}^{T}V + W_{P} H_{P}.
 The data matrix is approximated by an almost orthogonal sparse part that codes the harmonic instruments $V_H = W_HW_H^T V$ and a non constrained NMF part that codes the percussive instruments $V_P = W_PH_P$. The main advantage of the SPNMF results is in the fact that the method has few parameters compared to constrained NMF~\cite{canadas2014percussive} and NMPCF~\cite{kim2011nonnegative} while still obtaining similar results~\cite{laroche2015structured}. 
 
 
-%\subsection{Using regularized NMF for the harmonic part}
+\subsection{Using regularized NMF for the harmonic part}
 
+In order to highlight the advantages of using the PNMF for the harmonic part, we also designed a regularized method. Let $V$ be the magnitude spectrogram of the input data. The optimization problem is then:
+\begin{equation}
+\min_{W_{H},W_{P},H_{P}}D(V|W_HH_H + W_P  H_P) + k_1 TSM + k_2 SSP.
+\end{equation} 
+
+The constraints TSM and SSP are from equation \eqref{TSM} and \eqref{TSM} respectively. The hyperparameters $k_1$ and $k_2$ control the amount of temporal smoothness and spectral sparseness. This is a similar model as using a PNMF decomposition for the harmonic part and it requires prior tuning of the variables. 
 
 
 \subsection{Optimization Algorithm}

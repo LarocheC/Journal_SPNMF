@@ -23,7 +23,7 @@ MF is a state of the art, versatile and computationally efficient method. It is 
 \subsection{Results} 
 \label{subResults}
 
-Figures~\ref{DatabaseSDR},~\ref{DatabaseSIR} and~\ref{DatabaseSAR} show the SDR, SIR and SAR results of the four methods on the selected $89$ songs of the original Medley-dB database~\cite{bittner2014medleydb}. The results on the entire database show that all four methods extract the harmonic instruments much better than the percussive instruments. Our explanation is that all methods rely on Wiener filtering for phase reconstruction (see Equation~\eqref{percuwiener}). As the percussive instruments have flat spectra, the percussive mask is a non sparse matrix and small estimation errors drastically decrease the results of the percussive instruments. This tendency is not visible on small scale tests (see Figure~\ref{resultsDict}). 
+Figure~\ref{DatabaseSDR} shows the SDR, SIR and SAR results of the four methods on the selected $89$ songs of the original Medley-dB database~\cite{bittner2014medleydb}. The results on the entire database show that all four methods extract the harmonic instruments much better than the percussive instruments. Our explanation is that all methods rely on Wiener filtering for phase reconstruction (see Equation~\eqref{percuwiener}). As the percussive instruments have flat spectra, the percussive mask is a non sparse matrix and small estimation errors drastically decrease the results of the percussive instruments. This tendency is not visible on small scale tests (see Figure~\ref{resultsDict}). 
 
 Figure~\ref{DatabaseSDR} shows that SPNMF obtains on average the highest separation score for the percussive, harmonic and mean SDR. However, the variance of the results of SPNMF is higher than for the other algorithms. Some songs of the database contain percussive instruments that are not present in the learning database ENST-Drums, such as the tambourine, the bongo, the gong and electronic drums. Because the dictionary is fixed, these percussive instruments are not correctly decomposed by the SPNMF. Some songs are well separated while other obtain much lower results since the percussive part is not well decomposed. This induces an increase of the variance of the results. 
 
@@ -36,32 +36,32 @@ The constrained NMF algorithm relies on the same hypothesis than HPSS and the re
 %Compared to the other state of the art methods, the SPNMF obtains the higher average results on the selected database. 
 
 
-\begin{figure}[t]
+\begin{figure*}[t]
 
   \centering 
-  \includegraphics[width=9cm]{fig/DatabaseSDR.eps}
+  \includegraphics[width=19cm]{fig/DatabaseSDIAR.eps}
 %  \vspace{2.0cm}
-  \caption{\label{DatabaseSDR} SDR for percussive/left, harmonic/middle, mean/right separation results on the database for the four methods.}
+  \caption{\label{DatabaseSDR} SDR, SIR, SAR for percussive/left, harmonic/middle, mean/right separation results on the database for the four methods.}
   
-\end{figure}
+\end{figure*}
 
-\begin{figure}[t]
-
-  \centering 
-  \includegraphics[width=9cm]{fig/DatabaseSIR.eps}
-%  \vspace{2.0cm}
-  \caption{\label{DatabaseSIR} SIR for percussive/left, harmonic/middle, mean/right separation results on the database for the four methods.}
-  
-\end{figure}
-
-\begin{figure}[t]
-
-  \centering 
-  \includegraphics[width=9cm]{fig/DatabaseSAR.eps}
-%  \vspace{2.0cm}
-  \caption{\label{DatabaseSAR} SAR for percussive/left, harmonic/middle, mean/right separation results on the database for the four methods.}
-  
-\end{figure}
+%\begin{figure}[t]
+%
+%  \centering 
+%  \includegraphics[width=9cm]{fig/DatabaseSIR.eps}
+%%  \vspace{2.0cm}
+%  \caption{\label{DatabaseSIR} SIR for percussive/left, harmonic/middle, mean/right separation results on the database for the four methods.}
+%  
+%\end{figure}
+%
+%\begin{figure}[t]
+%
+%  \centering 
+%  \includegraphics[width=9cm]{fig/DatabaseSAR.eps}
+%%  \vspace{2.0cm}
+%  \caption{\label{DatabaseSAR} SAR for percussive/left, harmonic/middle, mean/right separation results on the database for the four methods.}
+%  
+%\end{figure}
 
 
 
@@ -69,7 +69,7 @@ The constrained NMF algorithm relies on the same hypothesis than HPSS and the re
 \subsection{Results on a genre specific database}
 \label{sec:subdata}
 
-The individual results on most of the songs of the database are similar to the average results. However, some interesting results were found on specific genres of music. Here we present the results obtained on the $14$ songs of the "Electronic/Fusion" music genre. These songs for the most part have a lot of silence and some solo parts played by only one instrument. Also, on some songs, the electronic drum repeats the same pattern during the whole song resulting in a very redundant drum part. The SDR results on the sub-database are displayed on Figure~\ref{ElectroFusionSDR} (the SIR and SAR results are represented in Appendix~\ref{appendix:sub_database} on Figures~\ref{ElectroFusionSIR} and~\ref{ElectroFusionSAR} respectively). 
+The individual results on most of the songs of the database are similar to the average results. However, some interesting results were found on specific genres of music. Here we present the results obtained on the $14$ songs of the "Electronic/Fusion" music genre. These songs for the most part have a lot of silence and some solo parts played by only one instrument. Also, on some songs, the electronic drum repeats the same pattern during the whole song resulting in a very redundant drum part. The SDR, SIR and SAR results on the sub-database are displayed on Figure~\ref{ElectroFusionSDR}. 
 
 The MF method gives competitive results, with a low variance for the percussive results and a good overall mean. The MF obtains consistent results throughout the database. The results on the genre specific database are significantly better than the ones on the whole database. It reflects the fact that the harmonic/percussive instruments are easier to separate on this genre of songs. 
  
@@ -82,14 +82,14 @@ On this sub-database, the SPNMF clearly outperforms the other methods. Similarly
 
 
 
-\begin{figure}[htb]
+\begin{figure*}[t]
 
   \centering 
-  \includegraphics[width=9cm]{fig/ElectroFusionSDR.eps}
+  \includegraphics[width=19cm]{fig/ElectroFusionSDIAR.eps}
 %  \vspace{2.0cm}
-  \caption{\label{ElectroFusionSDR} SDR for percussive/left, harmonic/middle, mean/right separation results on the Electronic/Fusion songs for the four methods.}
+  \caption{\label{ElectroFusionSDR} SDR, SIR and SAR for percussive/left, harmonic/middle, mean/right separation results on the Electronic/Fusion songs for the four methods.}
   
-\end{figure}
+\end{figure*}
 
 \subsection{Discussion}
 \label{discu}

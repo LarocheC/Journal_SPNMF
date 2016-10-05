@@ -55,6 +55,10 @@ F.~Rigaud and M.~Radenen, ``Singing voice melody transcription using deep
 J.~Paulus and T.~Virtanen, ``Drum transcription with non-negative spectrogram
   factorisation,'' in \emph{Proc. of EUSIPCO}, 2005, pp. 1--4.
 
+\bibitem{wudrum2016}
+C.~Wu and A.~Lerch, ``On drum playing technique detection in polyphonic
+  mixtures,'' 2016.
+
 \bibitem{fitzgerald2010harmonic}
 D.~Fitzgerald, ``Harmonic/percussive separation using median filtering,'' in
   \emph{Proc. of DAFx}, 2010.
@@ -65,18 +69,21 @@ C.-L. Hsu, D.~Wang, J.-S.~R. Jang, and K.~Hu, ``A tandem algorithm for singing
   \emph{Transactions on Audio, Speech, and Language Processing.}, vol.~20,
   no.~5, pp. 1482--1491, 2012.
 
+\bibitem{rigaud2011drum}
+F.~Rigaud, M.~Lagrange, A.~R{\"o}bel, and G.~Peeters, ``Drum extraction from
+  polyphonic music based on a spectro-temporal model of percussive sounds,'' in
+  \emph{Proc of IEEE ICASSP}, 2011, pp. 381--384.
+
+\bibitem{lee99}
+D.~Lee and S.~Seung, ``Learning the parts of objects by nonnegative matrix
+  factorization,'' \emph{Nature}, vol. 401, pp. 788--791, 1999.
+
 \bibitem{canadas2014percussive}
 F.~Canadas-Quesada, P.~Vera-Candeas, N.~Ruiz-Reyes, J.~Carabias-Orti, and
   P.~Cabanas-Molero, ``Percussive/harmonic sound separation by non-negative
   matrix factorization with smoothness/sparseness constraints,'' \emph{EURASIP
   Journal on Audio, Speech, and Music Processing}, vol. 2014, no.~1, pp. 1--17,
   2014.
-
-\bibitem{kim2011nonnegative}
-M.~Kim, J.~Yoo, K.~Kang, and S.~Choi, ``Nonnegative matrix partial
-  co-factorization for spectral and temporal drum source separation,''
-  \emph{Journal of Selected Topics in Signal Processing}, vol.~5, no.~6, pp.
-  1192--1204, 2011.
 
 \bibitem{laroche2015structured}
 C.~Laroche, M.~Kowalski, H.~Papadopoulos, and G.~Richard, ``A structured
@@ -86,10 +93,6 @@ C.~Laroche, M.~Kowalski, H.~Papadopoulos, and G.~Richard, ``A structured
 \bibitem{wudrum}
 C.-W. Wu and A.~Lerch, ``Drum transcription using partially fixed non-negative
   matrix factorization,'' in \emph{Proc. of EUSIPCO}, 2008.
-
-\bibitem{lee99}
-D.~Lee and S.~Seung, ``Learning the parts of objects by nonnegative matrix
-  factorization,'' \emph{Nature}, vol. 401, pp. 788--791, 1999.
 
 \bibitem{EwertM12}
 S.~Ewert and M.~M{\"u}ller, ``Score-informed source separation for music
@@ -145,6 +148,12 @@ Z.~Yang and E.~Oja, ``Linear and nonlinear projective nonnegative matrix
 Z.~Yuan and E.~Oja, ``Projective nonnegative matrix factorization for image
   compression and feature extraction,'' \emph{Image Analysis}, pp. 333--342,
   2005.
+
+\bibitem{kim2011nonnegative}
+M.~Kim, J.~Yoo, K.~Kang, and S.~Choi, ``Nonnegative matrix partial
+  co-factorization for spectral and temporal drum source separation,''
+  \emph{Journal of Selected Topics in Signal Processing}, vol.~5, no.~6, pp.
+  1192--1204, 2011.
 
 \bibitem{Lee01algorithmsfor}
 D.~Lee and S.~Seung, ``Algorithms for non-negative matrix factorization,''

@@ -31,10 +31,11 @@
 \citation{YangOja10}
 \citation{canadas2014percussive}
 \citation{yuanOja2005}
+\citation{YangOja10}
 \@writefile{toc}{\contentsline {section}{\numberline {II}Related Work}{2}}
 \newlabel{sec:Background}{{II}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}Non Negative Matrix Factorization}{2}}
-\citation{YangOja10}
+\newlabel{EqPnmf}{{1}{2}}
 \citation{choi}
 \citation{laroche2015structured}
 \citation{peeters2003automatic}
@@ -49,10 +50,11 @@
 \citation{canadas2014percussive}
 \citation{canadas2014percussive}
 \citation{Virtanen}
-\newlabel{EqPnmf}{{1}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Harmonic/Percussive Source Separation}{3}}
 \citation{canadas2014percussive}
 \citation{laroche2015structured}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Harmonic/Percussive Source Separation}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Structured projective NMF (SPNMF)}{3}}
+\newlabel{sec:SPNMF}{{III}{3}}
 \citation{canadas2014percussive}
 \citation{kim2011nonnegative}
 \citation{laroche2015structured}
@@ -62,8 +64,7 @@
 \citation{jaureguiberry2011adaptation}
 \citation{wudrum}
 \citation{canadas2014percussive,ono2008separation}
-\@writefile{toc}{\contentsline {section}{\numberline {III}Structured projective NMF (SPNMF)}{4}}
-\newlabel{sec:SPNMF}{{III}{4}}
+\citation{liutkus:hal-01110028}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Principle of the SPNMF}{4}}
 \newlabel{Cfunction}{{5}{4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Optimization Algorithm}{4}}
@@ -73,13 +74,12 @@
 \newlabel{AlgoMultipl}{{1}{4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}SPNMF with fixed dictionary}{4}}
 \newlabel{fixedict}{{\unhbox \voidb@x \hbox {III-C}}{4}}
-\citation{liutkus:hal-01110028}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-D}}Signal reconstruction}{4}}
 \citation{fevotte2009nonnegative}
 \citation{SiSec10}
 \citation{canadas2014percussive}
 \@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces SPNMF with the drum dictionary matrix.\relax }}{5}}
 \newlabel{AlgoDictionary}{{2}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-D}}Signal reconstruction}{5}}
 \newlabel{percuwiener}{{10}{5}}
 \@writefile{toc}{\contentsline {section}{\numberline {IV}Experimental Validation of SPNMF}{5}}
 \newlabel{sec:experiments}{{IV}{5}}
@@ -87,48 +87,48 @@
 \newlabel{SynthTest}{{\unhbox \voidb@x \hbox {IV-A}}{5}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces  Spectrogram of the synthetic test signal.\relax }}{5}}
 \newlabel{SpectroSynth}{{1}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Protocol and details of the test database}{5}}
 \citation{bsseval}
 \citation{gray1980distortion}
 \citation{canadas2014percussive}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces  Results of the decomposition of the NMF (top matrices), PNMF (middle matrices) and SPNMF (bottom matrices).\relax }}{6}}
 \newlabel{resultONMF2}{{2}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Protocol and details of the test database}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}Comparison between PNMF and regularized NMF}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-D}}Robustness wrt the rank of the harmonic part}{6}}
 \newlabel{setup:rank}{{\unhbox \voidb@x \hbox {IV-D}}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces  Optimization of the rank of factorization with the three divergences.\relax }}{6}}
+\newlabel{RankOfFact}{{3}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-E}}Influence of the divergence}{6}}
 \newlabel{setup:divergence}{{\unhbox \voidb@x \hbox {IV-E}}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces  Optimization of the rank of factorization with the three divergences.\relax }}{7}}
-\newlabel{RankOfFact}{{3}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  SDR, SIR and SAR of harmonic (left bar)/percussive (right bar) estimated sources on the SiSec database with a window frame of $1024$ samples.\relax }}{7}}
-\newlabel{frame1024}{{4}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces  SDR, SIR and SAR of harmonic (left bar)/percussive (right bar) estimated sources on the SiSec database with a window frame of $2048$ samples.\relax }}{7}}
-\newlabel{frame2048}{{5}{7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-F}}Influence of the dictionary}{7}}
-\newlabel{setup:dictionary}{{\unhbox \voidb@x \hbox {IV-F}}{7}}
 \citation{bittner2014medleydb}
 \citation{canadas2014percussive}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  SDR, SIR and SAR of harmonic (left bar)/percussive (right bar) estimated sources on the SiSec database with a window frame of $1024$ samples.\relax }}{7}}
+\newlabel{frame1024}{{4}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-F}}Influence of the dictionary}{7}}
+\newlabel{setup:dictionary}{{\unhbox \voidb@x \hbox {IV-F}}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces  SDR, SIR and SAR of harmonic (left bar)/percussive (right bar) estimated sources on the SiSec database with a window frame of $2048$ samples.\relax }}{7}}
+\newlabel{frame2048}{{5}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}State of the art Benchmark}{7}}
+\newlabel{sec:stateoftheart}{{V}{7}}
 \citation{bittner2014medleydb}
 \citation{canadas2014percussive}
 \citation{fitzgerald2010harmonic}
 \citation{kim2011nonnegative}
 \citation{DriedgerMueller14_TSMToolbox_DAFX}
 \citation{bittner2014medleydb}
+\citation{canadas2014percussive}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces  Mean SDR SIR and SAR results averaged for each drummer on the SiSec database.\relax }}{8}}
 \newlabel{resultsDict}{{6}{8}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces  Mean SDR SIR and SAR results for the dictionaries learned with different signal length on the SiSec database.\relax }}{8}}
 \newlabel{resultsDictLength}{{7}{8}}
-\@writefile{toc}{\contentsline {section}{\numberline {V}State of the art Benchmark}{8}}
-\newlabel{sec:stateoftheart}{{V}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-A}}Database}{8}}
 \newlabel{database}{{\unhbox \voidb@x \hbox {V-A}}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces  Mean SDR SIR and SAR results for various rank of factorization on the SiSec database.\relax }}{8}}
-\newlabel{resultsDictD2}{{8}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-B}}State of the art methods}{8}}
 \newlabel{soth}{{\unhbox \voidb@x \hbox {V-B}}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces  Mean SDR SIR and SAR results for various rank of factorization on the SiSec database.\relax }}{8}}
+\newlabel{resultsDictD2}{{8}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-C}}Results}{8}}
 \newlabel{subResults}{{\unhbox \voidb@x \hbox {V-C}}{8}}
-\citation{canadas2014percussive}
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces  SDR for percussive/left, harmonic/middle, mean/right separation results on the database for the four methods.\relax }}{9}}
 \newlabel{DatabaseSDR}{{9}{9}}
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces  SIR for percussive/left, harmonic/middle, mean/right separation results on the database for the four methods.\relax }}{9}}
@@ -137,17 +137,19 @@
 \newlabel{sec:subdata}{{\unhbox \voidb@x \hbox {V-D}}{9}}
 \@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces  SAR for percussive/left, harmonic/middle, mean/right separation results on the database for the four methods.\relax }}{9}}
 \newlabel{DatabaseSAR}{{11}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-E}}Discussion}{9}}
+\newlabel{discu}{{\unhbox \voidb@x \hbox {V-E}}{9}}
 \citation{canadas2014percussive}
 \citation{bittner2014medleydb}
 \citation{gillet2006enst}
 \@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces  SDR for percussive/left, harmonic/middle, mean/right separation results on the Electronic/Fusion songs for the four methods.\relax }}{10}}
 \newlabel{ElectroFusionSDR}{{12}{10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-E}}Discussion}{10}}
-\newlabel{discu}{{\unhbox \voidb@x \hbox {V-E}}{10}}
 \@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion}{10}}
 \newlabel{sec:conc}{{VI}{10}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}}Euclidean distance}{10}}
 \newlabel{euclidisteq}{{\unhbox \voidb@x \hbox {VI-A}}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}}Kullback Leiber divergence}{10}}
+\newlabel{KLdisteq}{{\unhbox \voidb@x \hbox {VI-B}}{10}}
 \bibstyle{IEEEtran}
 \bibdata{reference}
 \bibcite{lee99}{1}
@@ -160,8 +162,14 @@
 \bibcite{jaureguiberry2011adaptation}{8}
 \bibcite{wudrum}{9}
 \bibcite{Virtanen}{10}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}}Kullback Leiber divergence}{11}}
-\newlabel{KLdisteq}{{\unhbox \voidb@x \hbox {VI-B}}{11}}
+\bibcite{canadas2014percussive}{11}
+\bibcite{choi}{12}
+\bibcite{YangOja10}{13}
+\bibcite{vincent2010adaptive}{14}
+\bibcite{laroche2015structured}{15}
+\bibcite{peeters2003automatic}{16}
+\bibcite{daudet2006review}{17}
+\bibcite{klapuri2008multipitch}{18}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-C}}Itakura Saito divergence}{11}}
 \newlabel{ISdisteq}{{\unhbox \voidb@x \hbox {VI-C}}{11}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-D}}Results on the sub database}{11}}
@@ -171,14 +179,6 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces  SAR for percussive/left, harmonic/middle, mean/right separation results on the Electronic/Fusion songs for the four methods.\relax }}{11}}
 \newlabel{ElectroFusionSAR}{{14}{11}}
 \@writefile{toc}{\contentsline {section}{References}{11}}
-\bibcite{canadas2014percussive}{11}
-\bibcite{choi}{12}
-\bibcite{YangOja10}{13}
-\bibcite{vincent2010adaptive}{14}
-\bibcite{laroche2015structured}{15}
-\bibcite{peeters2003automatic}{16}
-\bibcite{daudet2006review}{17}
-\bibcite{klapuri2008multipitch}{18}
 \bibcite{eronen2000musical}{19}
 \bibcite{salamon2012melody}{20}
 \bibcite{ellis2007beat}{21}

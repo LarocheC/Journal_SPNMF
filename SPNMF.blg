@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: ./SPNMF.aux
+The top-level auxiliary file: SPNMF.aux
 The style file: IEEEtran.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -13,44 +13,44 @@ Database file #1: reference.bib
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 36 entries,
+You've used 35 entries,
             4039 wiz_defined-function locations,
-            1011 strings with 13403 characters,
-and the built_in function-call counts, 27950 in all, are:
-= -- 2227
-> -- 623
-< -- 246
-+ -- 359
-- -- 101
-* -- 1312
-:= -- 4096
-add.period$ -- 74
-call.type$ -- 36
-change.case$ -- 35
-chr.to.int$ -- 570
-cite$ -- 36
-duplicate$ -- 2014
-empty$ -- 2369
-format.name$ -- 130
-if$ -- 6562
+            1005 strings with 13269 characters,
+and the built_in function-call counts, 26775 in all, are:
+= -- 2114
+> -- 603
+< -- 228
++ -- 345
+- -- 99
+* -- 1252
+:= -- 3914
+add.period$ -- 72
+call.type$ -- 35
+change.case$ -- 34
+chr.to.int$ -- 534
+cite$ -- 35
+duplicate$ -- 1937
+empty$ -- 2308
+format.name$ -- 128
+if$ -- 6289
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 336
-newline$ -- 131
-num.names$ -- 36
-pop$ -- 778
+int.to.str$ -- 35
+missing$ -- 326
+newline$ -- 128
+num.names$ -- 35
+pop$ -- 772
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2231
+skip$ -- 2139
 stack$ -- 0
-substring$ -- 1364
-swap$ -- 1626
-text.length$ -- 56
+substring$ -- 1279
+swap$ -- 1541
+text.length$ -- 50
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 36
+type$ -- 35
 warning$ -- 0
-while$ -- 119
-width$ -- 38
-write$ -- 365
+while$ -- 112
+width$ -- 37
+write$ -- 351

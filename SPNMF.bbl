@@ -21,6 +21,72 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{peeters2003automatic}
+G.~Peeters, ``Automatic classification of large musical instrument databases
+  using hierarchical classifiers with inertia ratio maximization,'' in
+  \emph{Audio Engineering Society Convention 115}.\hskip 1em plus 0.5em minus
+  0.4em\relax Audio Engineering Society, 2003.
+
+\bibitem{daudet2006review}
+L.~Daudet, ``A review on techniques for the extraction of transients in musical
+  signals,'' in \emph{Computer Music Modeling and Retrieval}.\hskip 1em plus
+  0.5em minus 0.4em\relax Springer, 2006, pp. 219--232.
+
+\bibitem{klapuri2008multipitch}
+A.~Klapuri, ``Multipitch analysis of polyphonic music and speech signals using
+  an auditory model,'' \emph{IEEE Transactions on Audio, Speech, and Language
+  Processing.}, vol.~16, no.~2, pp. 255--266, 2008.
+
+\bibitem{eronen2000musical}
+A.~Eronen and A.~Klapuri, ``Musical instrument recognition using cepstral
+  coefficients and temporal features,'' in \emph{Proc. of IEEE ICASSP}, vol.~2,
+  2000, pp. II753--II756.
+
+\bibitem{salamon2012melody}
+J.~Salamon and E.~G{\'o}mez, ``Melody extraction from polyphonic music signals
+  using pitch contour characteristics,'' \emph{Transactions on Audio, Speech,
+  and Language Processing.}, vol.~20, no.~6, pp. 1759--1770, 2012.
+
+\bibitem{rigaudISMIR2016}
+F.~Rigaud and M.~Radenen, ``Singing voice melody transcription using deep
+  neural networks,'' in \emph{Proc. of ISMIR}, 2016.
+
+\bibitem{paulus2005drum}
+J.~Paulus and T.~Virtanen, ``Drum transcription with non-negative spectrogram
+  factorisation,'' in \emph{Proc. of EUSIPCO}, 2005, pp. 1--4.
+
+\bibitem{fitzgerald2010harmonic}
+D.~Fitzgerald, ``Harmonic/percussive separation using median filtering,'' in
+  \emph{Proc. of DAFx}, 2010.
+
+\bibitem{hsu2012tandem}
+C.-L. Hsu, D.~Wang, J.-S.~R. Jang, and K.~Hu, ``A tandem algorithm for singing
+  pitch extraction and voice separation from music accompaniment,''
+  \emph{Transactions on Audio, Speech, and Language Processing.}, vol.~20,
+  no.~5, pp. 1482--1491, 2012.
+
+\bibitem{canadas2014percussive}
+F.~Canadas-Quesada, P.~Vera-Candeas, N.~Ruiz-Reyes, J.~Carabias-Orti, and
+  P.~Cabanas-Molero, ``Percussive/harmonic sound separation by non-negative
+  matrix factorization with smoothness/sparseness constraints,'' \emph{EURASIP
+  Journal on Audio, Speech, and Music Processing}, vol. 2014, no.~1, pp. 1--17,
+  2014.
+
+\bibitem{kim2011nonnegative}
+M.~Kim, J.~Yoo, K.~Kang, and S.~Choi, ``Nonnegative matrix partial
+  co-factorization for spectral and temporal drum source separation,''
+  \emph{Journal of Selected Topics in Signal Processing}, vol.~5, no.~6, pp.
+  1192--1204, 2011.
+
+\bibitem{laroche2015structured}
+C.~Laroche, M.~Kowalski, H.~Papadopoulos, and G.~Richard, ``A structured
+  nonnegative matrix factorization for source separation,'' in \emph{Proc. of
+  EUSIPCO}, 2015.
+
+\bibitem{wudrum}
+C.-W. Wu and A.~Lerch, ``Drum transcription using partially fixed non-negative
+  matrix factorization,'' in \emph{Proc. of EUSIPCO}, 2008.
+
 \bibitem{lee99}
 D.~Lee and S.~Seung, ``Learning the parts of objects by nonnegative matrix
   factorization,'' \emph{Nature}, vol. 401, pp. 788--791, 1999.
@@ -60,22 +126,11 @@ X.~Jaureguiberry, P.~Leveau, S.~Maller, and J.~J. Burred, ``Adaptation of
   source-specific dictionaries in non-negative matrix factorization for source
   separation,'' in \emph{Proc. of IEEE ICASSP}, 2011, pp. 5--8.
 
-\bibitem{wudrum}
-C.-W. Wu and A.~Lerch, ``Drum transcription using partially fixed non-negative
-  matrix factorization,'' in \emph{Proc. of EUSIPCO}, 2008.
-
 \bibitem{Virtanen}
 T.~Virtanen, ``Monaural sound source separation by nonnegative matrix
   factorization with temporal continuity and sparseness criteria,'' \emph{IEEE
   Transactions on Audio, Speech, Language Processing.}, vol.~15, no.~3, pp.
   1066--1074, 2007.
-
-\bibitem{canadas2014percussive}
-F.~Canadas-Quesada, P.~Vera-Candeas, N.~Ruiz-Reyes, J.~Carabias-Orti, and
-  P.~Cabanas-Molero, ``Percussive/harmonic sound separation by non-negative
-  matrix factorization with smoothness/sparseness constraints,'' \emph{EURASIP
-  Journal on Audio, Speech, and Music Processing}, vol. 2014, no.~1, pp. 1--17,
-  2014.
 
 \bibitem{choi}
 S.~Choi, ``Algorithms for orthogonal nonnegative matrix factorization,'' in
@@ -85,71 +140,6 @@ S.~Choi, ``Algorithms for orthogonal nonnegative matrix factorization,'' in
 Z.~Yang and E.~Oja, ``Linear and nonlinear projective nonnegative matrix
   factorization,'' \emph{IEEE Transactions on Neural Network.}, vol.~21, no.~5,
   pp. 734--749, 2010.
-
-\bibitem{vincent2010adaptive}
-E.Vincent, N.Bertin, and R.Badeau, ``Adaptive harmonic spectral decomposition
-  for multiple pitch estimation,'' \emph{IEEE Transactions on Audio, Speech,
-  and Language Processing.}, vol.~18, no.~3, pp. 528--537, 2010.
-
-\bibitem{laroche2015structured}
-C.~Laroche, M.~Kowalski, H.~Papadopoulos, and G.~Richard, ``A structured
-  nonnegative matrix factorization for source separation,'' in \emph{Proc. of
-  EUSIPCO}, 2015.
-
-\bibitem{peeters2003automatic}
-G.~Peeters, ``Automatic classification of large musical instrument databases
-  using hierarchical classifiers with inertia ratio maximization,'' in
-  \emph{Audio Engineering Society Convention 115}.\hskip 1em plus 0.5em minus
-  0.4em\relax Audio Engineering Society, 2003.
-
-\bibitem{daudet2006review}
-L.~Daudet, ``A review on techniques for the extraction of transients in musical
-  signals,'' in \emph{Computer Music Modeling and Retrieval}.\hskip 1em plus
-  0.5em minus 0.4em\relax Springer, 2006, pp. 219--232.
-
-\bibitem{klapuri2008multipitch}
-A.~Klapuri, ``Multipitch analysis of polyphonic music and speech signals using
-  an auditory model,'' \emph{IEEE Transactions on Audio, Speech, and Language
-  Processing.}, vol.~16, no.~2, pp. 255--266, 2008.
-
-\bibitem{eronen2000musical}
-A.~Eronen and A.~Klapuri, ``Musical instrument recognition using cepstral
-  coefficients and temporal features,'' in \emph{Proc. of IEEE ICASSP}, vol.~2,
-  2000, pp. II753--II756.
-
-\bibitem{salamon2012melody}
-J.~Salamon and E.~G{\'o}mez, ``Melody extraction from polyphonic music signals
-  using pitch contour characteristics,'' \emph{Transactions on Audio, Speech,
-  and Language Processing.}, vol.~20, no.~6, pp. 1759--1770, 2012.
-
-\bibitem{ellis2007beat}
-D.~P. Ellis, ``Beat tracking by dynamic programming,'' \emph{Journal of New
-  Music Research}, vol.~36, no.~1, pp. 51--60, 2007.
-
-\bibitem{paulus2005drum}
-J.~Paulus and T.~Virtanen, ``Drum transcription with non-negative spectrogram
-  factorisation,'' in \emph{Proc. of EUSIPCO}, 2005, pp. 1--4.
-
-\bibitem{fitzgerald2010harmonic}
-D.~Fitzgerald, ``Harmonic/percussive separation using median filtering,'' in
-  \emph{Proc. of DAFx}, 2010.
-
-\bibitem{hsu2012tandem}
-C.-L. Hsu, D.~Wang, J.-S.~R. Jang, and K.~Hu, ``A tandem algorithm for singing
-  pitch extraction and voice separation from music accompaniment,''
-  \emph{Transactions on Audio, Speech, and Language Processing.}, vol.~20,
-  no.~5, pp. 1482--1491, 2012.
-
-\bibitem{ono2008separation}
-N.~Ono, K.~Miyamoto, J.~L. Roux, H.~Kameoka, and S.~Sagayama, ``Separation of a
-  monaural audio signal into harmonic/percussive components by complementary
-  diffusion on spectrogram,'' in \emph{Proc. of EUSIPCO}, 2008.
-
-\bibitem{kim2011nonnegative}
-M.~Kim, J.~Yoo, K.~Kang, and S.~Choi, ``Nonnegative matrix partial
-  co-factorization for spectral and temporal drum source separation,''
-  \emph{Journal of Selected Topics in Signal Processing}, vol.~5, no.~6, pp.
-  1192--1204, 2011.
 
 \bibitem{yuanOja2005}
 Z.~Yuan and E.~Oja, ``Projective nonnegative matrix factorization for image
@@ -163,6 +153,11 @@ D.~Lee and S.~Seung, ``Algorithms for non-negative matrix factorization,''
 \bibitem{gillet2006enst}
 O.Gillet and G.Richard, ``Enst-drums: an extensive audio-visual database for
   drum signals processing.'' in \emph{Proc. of ISMIR}, 2006, pp. 156--159.
+
+\bibitem{ono2008separation}
+N.~Ono, K.~Miyamoto, J.~L. Roux, H.~Kameoka, and S.~Sagayama, ``Separation of a
+  monaural audio signal into harmonic/percussive components by complementary
+  diffusion on spectrogram,'' in \emph{Proc. of EUSIPCO}, 2008.
 
 \bibitem{liutkus:hal-01110028}
 A.~Liutkus and R.~Badeau, ``{Generalized Wiener filtering with fractional power

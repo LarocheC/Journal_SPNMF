@@ -18,12 +18,16 @@ The data matrix is approximated by an almost orthogonal sparse part that codes t
 
 \subsection{Using regularized NMF for the harmonic part}
 
-In order to highlight the advantages of using the PNMF for the harmonic part, we also designed a regularized method. Let $V$ be the magnitude spectrogram of the input data. The optimization problem is then:
+In order to highlight the advantages of using the PNMF for the harmonic part, we also designed a regularized method. Let $V$ be the magnitude spectrogram of the input data, the model is given by 
 \begin{equation}
-\min_{W_{H},W_{P},H_{P}}D(V|W_HH_H + W_P  H_P) + k_1 TSM + k_2 SSP.
+V \approx \tilde{V} = W_HH_H + W_P  H_P.
+\end{equation}
+The optimization problem is then:
+\begin{equation}\label{REGNMF}
+\min_{W_{H},W_{P},H_{P}}D(V|\tilde{V}) + k_{TSM} TSM + k_{SSP} SSP.
 \end{equation} 
 
-The constraints TSM and SSP are from equation \eqref{TSM} and \eqref{TSM} respectively. The hyperparameters $k_1$ and $k_2$ control the amount of temporal smoothness and spectral sparseness. This is a similar model as using a PNMF decomposition for the harmonic part and it requires prior tuning of the variables. 
+The constraints TSM and SSP are from equation \eqref{TSM} and \eqref{TSM} respectively. The hyperparameters $k_{TSM}$ and $k_{SSP}$ control the amount of temporal smoothness and spectral sparseness. This model replace the PNMF components by a regularized NMF (RegNMF) to extract the harmonic part. This requires prior tuning of the variables $k_{SSP}$ and $k_{SSP}$. 
 
 
 \subsection{Optimization Algorithm}
@@ -67,13 +71,14 @@ The optimization of the SPNMF algorithm is done sequentially, as described in Al
 \end{algorithm}
 
 
-\subsection{SPNMF with fixed dictionary}\label{fixedict}  
+\subsection{SPNMF with a fixed dictionary}\label{fixedict}  
 
-A fully unsupervised SPNMF model does not allow for a satisfying harmonic/percussive source separation~\cite{laroche2015structured}. To alleviate this problem, we use here a fixed drum dictionary $W_p$ for the percussive part of the SPNMF which is created using the drum database ENST-Drums~\cite{gillet2006enst}. In this database three professional drum players specialized in a specific type of music have been recorded. Each drummer uses a specific drum set from a small one (two toms and two cymbals) to a full rock drum kit (four toms and five cymbals). 
+A fully unsupervised SPNMF model does not allow for a satisfying harmonic/percussive source separation~\cite{laroche2015structured}. To alleviate this problem, we use here a fixed drum dictionary $W_p$ for the percussive part of the SPNMF which is created using the drum database ENST-Drums~\cite{gillet2006enst}. In this database three professional drum players specialized in a specific type of music have been recorded. Each drummer used a specific drum set from a small one (two toms and two cymbals) to a full rock drum kit (four toms and five cymbals). 
 
-Two different ways can be used to build a dictionary. The first one is to perform a NMF decomposition on a large database~\cite{jaureguiberry2011adaptation}. The rank of factorization is an important learning variable that will be discussed in a later section. This method is effective at giving a dictionary specific to an instrument and the size of the dictionary is maintained low so it does not increase the computation time. However, the template of the dictionary does not represent a single element of the drum kit so it is not possible to perform direct drum transcription.
+%Two different ways can be used to build a dictionary. 
+The main method to construct a dictionary is to perform a NMF decomposition on a large database~\cite{jaureguiberry2011adaptation}. The rank of factorization is an important learning variable that will be discussed in a later section. This method is effective at giving a dictionary specific to an instrument and the size of the dictionary is maintained low so it does not increase the computation time. However, the template of the dictionary does not represent a single element of the drum kit so it is not possible to perform direct drum transcription.
 
-A second way to build the dictionary is to directly use the STFT of a drum signal~\cite{wudrum}. The ENST-Drum database contains audio files where elements of the drum kit are played independently and that we used to build another types of drum dictionary. This method allows having a specific dictionary, yet the matrix is redundant and very large which increases the computation time. Both learning methods are compared in Section \ref{setup:dictionary}. \\
+%A second way to build the dictionary is to directly use the STFT of a drum signal~\cite{wudrum}. The ENST-Drum database contains audio files where elements of the drum kit are played independently and that we used to build other types of drum dictionary. This method allows having a specific dictionary, yet the matrix is redundant and very large which increases the computation time. Both learning methods are compared in Section \ref{setup:dictionary}.
 
 The main advantage of the proposed method over the previously mentioned concurrent approaches is that it can take into account some of the percussive instruments that have a sparse spectrum. The bass drum and the toms have almost harmonic spectra with most energy in the low frequency range. These sounds are consequently hard to extract while enforcing frequency regularity of the percussive part like in~\cite{canadas2014percussive,ono2008separation}.
 

@@ -43,14 +43,28 @@ Three tests are run on these data:
 	\item The second test is to evaluate which of the three divergences (Euc, KL and IS respectively) give the best harmonic/percussive decomposition results.
 	\item The last test shows the influence of the dictionary on the separation performance. 
 \end{enumerate} 
-Note that the database we use for tuning the proposed method is different from the one in the evaluation phase in order to prevent any possible over-training and therefore to get the most accurate and fair comparison. 
-In order to evaluate and compare the results we then compute the common Signal to Distortion Ratio/Signal to Interference Ration/Signal to Artefact Ratio (SDR/SIR/SAR) metrics for blind source separation with the BSS-Eval toolbox~\cite{bsseval}. 
+Note that the database we use for tuning the proposed method is different from the one in the evaluation phase in order to prevent any possible over-training. 
+In order to evaluate and compare the results we then compute Signal to Distortion Ratio/Signal to Interference Ration/Signal to Artefact Ratio (SDR/SIR/SAR) that are common metrics for blind source separation with the BSS-Eval toolbox~\cite{bsseval}. 
 
 
 
 \subsection{Comparison between PNMF and regularized NMF}
 
+In this test the two methods are going to be tested using the same drum dictionary, with the same rank of factorization (the rank of factorization of the harmonic part is $k_H=150$) and the optimization is made with the KL divergence.
+The SPNMF does not require further tuning. The two hyper parameters of the regularized method need to be optimised on a development database. This optimization process gives a set of value for the hyper parameters that maximise the average SDR SIR and SAR results, in our case we found that $k_{TSM} = 0.5$ and $k_{SSP}= 0.2$ where the most appropriate set of hyper parameters. However, it is not guaranteed that these fixed value maximise the score on each specific songs. 
+Figure~\ref{regnmfcomp} show the results of the decomposition on the SiSec database. The results of the SPNMF for the SDR and SIR are above the regularized NMF.
 
+These results shows that performance of the SPNMF over the RegNMF. The constraints can successfully replaced by a PNMF term in order to extract the harmonic instruments in order to simplify the optimization process. 
+
+
+\begin{figure}[t]
+
+  \centering 
+  \includegraphics[width=9cm]{fig/RegNMFComp}
+%  \vspace{2.0cm}
+  \caption{\label{regnmfcomp} Comparaison of the SPNMF and the Regularized NMF on the SiSec database.}
+  
+\end{figure}
 
 
 \subsection{Robustness wrt the rank of the harmonic part}
@@ -153,4 +167,6 @@ For the rest of the article, we will use a dictionary constructed using a $6$~mi
   \caption{\label{resultsDictD2} Mean SDR SIR and SAR results for various rank of factorization on the SiSec database.}
   
 \end{figure}
+
+
 

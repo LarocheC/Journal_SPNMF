@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.2)  6 OCT 2016 16:29
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.2)  7 OCT 2016 17:26
 entering extended mode
 **SPNMF.tex
 (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\SPNMF.tex
@@ -498,28 +498,53 @@ Package pdftex.def Info: fig/WHcomp-eps-converted-to.pdf used on input line 28.
  [5 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/synthetictestspectrogr
 am-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/RegNMFComp.eps>
-(epstopdf)                    date: 2016-10-06 13:42:13
-(epstopdf)                    size: 30796008 bytes
+(epstopdf)                    date: 2016-10-07 11:35:56
+(epstopdf)                    size: 28967168 bytes
 (epstopdf)             Output file: <fig/RegNMFComp-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-06 15:25:48
-(epstopdf)                    size: 92182 bytes
+(epstopdf)                    date: 2016-10-07 11:39:55
+(epstopdf)                    size: 88052 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig/RegNMFComp-eps-converte
 d-to.pdf fig/RegNMFComp.eps>
-(epstopdf)             \includegraphics on input line 63.
+(epstopdf)             \includegraphics on input line 64.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/RegNMFComp-eps-converted-to.pdf, id=42, 1445.4pt x 817.0525pt>
+<fig/RegNMFComp-eps-converted-to.pdf, id=42, 1386.17876pt x 801.99625pt>
 File: fig/RegNMFComp-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/RegNMFComp-eps-converted-to.pdf>
 Package pdftex.def Info: fig/RegNMFComp-eps-converted-to.pdf used on input line
- 63.
-(pdftex.def)             Requested size: 256.0748pt x 144.7442pt.
+ 64.
+(pdftex.def)             Requested size: 256.0748pt x 148.1467pt.
 
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 63--65
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 64--66
  [][] 
  []
 
+Package epstopdf Info: Source file: <fig/PNMFShowcase.eps>
+(epstopdf)                    date: 2016-10-07 12:17:30
+(epstopdf)                    size: 1068754 bytes
+(epstopdf)             Output file: <fig/PNMFShowcase-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-10-07 16:11:57
+(epstopdf)                    size: 493859 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/PNMFShowcase-eps-conver
+ted-to.pdf fig/PNMFShowcase.eps>
+(epstopdf)             \includegraphics on input line 73.
+Package epstopdf Info: Output file is already uptodate.
+<fig/PNMFShowcase-eps-converted-to.pdf, id=43, 1386.17876pt x 801.99625pt>
+File: fig/PNMFShowcase-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/PNMFShowcase-eps-converted-to.pdf>
+Package pdftex.def Info: fig/PNMFShowcase-eps-converted-to.pdf used on input li
+ne 73.
+(pdftex.def)             Requested size: 256.0748pt x 148.1467pt.
+
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 73--75
+ [][] 
+ []
+
+[6 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/WHcomp-eps-converted-to
+.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/RegNMFComp-eps-conve
+rted-to.pdf>]
 Package epstopdf Info: Source file: <fig/RankOfFact.eps>
 (epstopdf)                    date: 2016-04-01 10:36:06
 (epstopdf)                    size: 11660 bytes
@@ -528,23 +553,21 @@ Package epstopdf Info: Source file: <fig/RankOfFact.eps>
 (epstopdf)                    size: 7924 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig/RankOfFact-eps-converte
 d-to.pdf fig/RankOfFact.eps>
-(epstopdf)             \includegraphics on input line 83.
+(epstopdf)             \includegraphics on input line 93.
 Package epstopdf Info: Output file is already uptodate.
-<fig/RankOfFact-eps-converted-to.pdf, id=43, 1446.40375pt x 815.045pt>
+
+<fig/RankOfFact-eps-converted-to.pdf, id=85, 1446.40375pt x 815.045pt>
 File: fig/RankOfFact-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/RankOfFact-eps-converted-to.pdf>
 Package pdftex.def Info: fig/RankOfFact-eps-converted-to.pdf used on input line
- 83.
+ 93.
 (pdftex.def)             Requested size: 256.0748pt x 144.28906pt.
 
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 83--85
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 93--95
  [][] 
  []
 
-[6 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/WHcomp-eps-converted-to
-.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/RegNMFComp-eps-conve
-rted-to.pdf>]
 Package epstopdf Info: Source file: <fig/NewDictDivTest1024.eps>
 (epstopdf)                    date: 2016-10-05 17:48:14
 (epstopdf)                    size: 15072 bytes
@@ -554,18 +577,18 @@ f>
 (epstopdf)                    size: 5557 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig/NewDictDivTest1024-eps-
 converted-to.pdf fig/NewDictDivTest1024.eps>
-(epstopdf)             \includegraphics on input line 109.
+(epstopdf)             \includegraphics on input line 119.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/NewDictDivTest1024-eps-converted-to.pdf, id=87, 1386.17876pt x 801.99625pt
+<fig/NewDictDivTest1024-eps-converted-to.pdf, id=86, 1386.17876pt x 801.99625pt
 >
 File: fig/NewDictDivTest1024-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/NewDictDivTest1024-eps-converted-to.pdf>
 Package pdftex.def Info: fig/NewDictDivTest1024-eps-converted-to.pdf used on in
-put line 109.
+put line 119.
 (pdftex.def)             Requested size: 256.0748pt x 148.1467pt.
 
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 109--111
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 119--121
  [][] 
  []
 
@@ -577,27 +600,25 @@ Package epstopdf Info: Source file: <fig/NewDictDivTest.eps>
 (epstopdf)                    size: 5477 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig/NewDictDivTest-eps-conv
 erted-to.pdf fig/NewDictDivTest.eps>
-(epstopdf)             \includegraphics on input line 119.
+(epstopdf)             \includegraphics on input line 129.
 Package epstopdf Info: Output file is already uptodate.
-<fig/NewDictDivTest-eps-converted-to.pdf, id=88, 1386.17876pt x 801.99625pt>
+<fig/NewDictDivTest-eps-converted-to.pdf, id=87, 1386.17876pt x 801.99625pt>
 File: fig/NewDictDivTest-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/NewDictDivTest-eps-converted-to.pdf>
 Package pdftex.def Info: fig/NewDictDivTest-eps-converted-to.pdf used on input 
-line 119.
+line 129.
 (pdftex.def)             Requested size: 256.0748pt x 148.1467pt.
 
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 119--121
+Overfull \hbox (4.0748pt too wide) in paragraph at lines 129--131
  [][] 
  []
 
-
-Underfull \vbox (badness 1215) has occurred while \output is active []
-
- [7 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/RankOfFact-eps-convert
-ed-to.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/NewDictDivTest1
-024-eps-converted-to.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/
-NewDictDivTest-eps-converted-to.pdf>]
+[7 <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/PNMFShowcase-eps-conver
+ted-to.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/RankOfFact-eps
+-converted-to.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/NewDict
+DivTest1024-eps-converted-to.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SP
+NMF/fig/NewDictDivTest-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/ResultsMeanRank.eps>
 (epstopdf)                    date: 2016-10-05 11:24:17
 (epstopdf)                    size: 10492 bytes
@@ -606,15 +627,15 @@ Package epstopdf Info: Source file: <fig/ResultsMeanRank.eps>
 (epstopdf)                    size: 7647 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig/ResultsMeanRank-eps-con
 verted-to.pdf fig/ResultsMeanRank.eps>
-(epstopdf)             \includegraphics on input line 148.
+(epstopdf)             \includegraphics on input line 159.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/ResultsMeanRank-eps-converted-to.pdf, id=107, 1284.8pt x 608.2725pt>
+<fig/ResultsMeanRank-eps-converted-to.pdf, id=116, 1284.8pt x 608.2725pt>
 File: fig/ResultsMeanRank-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/ResultsMeanRank-eps-converted-to.pdf>
 Package pdftex.def Info: fig/ResultsMeanRank-eps-converted-to.pdf used on input
- line 148.
+ line 159.
 (pdftex.def)             Requested size: 227.62204pt x 107.75797pt.
 Package epstopdf Info: Source file: <fig/ResultsMeanLength.eps>
 (epstopdf)                    date: 2016-10-05 11:24:17
@@ -625,15 +646,15 @@ Package epstopdf Info: Source file: <fig/ResultsMeanLength.eps>
 (epstopdf)                    size: 7500 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig/ResultsMeanLength-eps-c
 onverted-to.pdf fig/ResultsMeanLength.eps>
-(epstopdf)             \includegraphics on input line 157.
+(epstopdf)             \includegraphics on input line 168.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/ResultsMeanLength-eps-converted-to.pdf, id=108, 1284.8pt x 608.2725pt>
+<fig/ResultsMeanLength-eps-converted-to.pdf, id=117, 1284.8pt x 608.2725pt>
 File: fig/ResultsMeanLength-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/ResultsMeanLength-eps-converted-to.pdf>
 Package pdftex.def Info: fig/ResultsMeanLength-eps-converted-to.pdf used on inp
-ut line 157.
+ut line 168.
 (pdftex.def)             Requested size: 227.62204pt x 107.75797pt.
 Package epstopdf Info: Source file: <fig/ResultsDictDrummer2.eps>
 (epstopdf)                    date: 2016-10-05 11:24:17
@@ -644,15 +665,15 @@ df>
 (epstopdf)                    size: 7813 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig/ResultsDictDrummer2-eps
 -converted-to.pdf fig/ResultsDictDrummer2.eps>
-(epstopdf)             \includegraphics on input line 165.
+(epstopdf)             \includegraphics on input line 176.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/ResultsDictDrummer2-eps-converted-to.pdf, id=109, 1284.8pt x 608.2725pt>
+<fig/ResultsDictDrummer2-eps-converted-to.pdf, id=118, 1284.8pt x 608.2725pt>
 File: fig/ResultsDictDrummer2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/ResultsDictDrummer2-eps-converted-to.pdf>
 Package pdftex.def Info: fig/ResultsDictDrummer2-eps-converted-to.pdf used on i
-nput line 165.
+nput line 176.
 (pdftex.def)             Requested size: 227.62204pt x 107.75797pt.
 )
 (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\benchmark.tex [8 <C:/Users/lar
@@ -661,17 +682,17 @@ C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/ResultsMeanLength-eps-conve
 rted-to.pdf> <C:/Users/laroche/Documents/GitHub/Journal_SPNMF/fig/ResultsDictDr
 ummer2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/DatabaseSDIAR.eps>
-(epstopdf)                    date: 2016-10-05 16:05:02
-(epstopdf)                    size: 60478814 bytes
+(epstopdf)                    date: 2016-10-07 11:30:47
+(epstopdf)                    size: 20298 bytes
 (epstopdf)             Output file: <fig/DatabaseSDIAR-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-05 16:21:35
-(epstopdf)                    size: 157378 bytes
+(epstopdf)                    date: 2016-10-07 11:31:17
+(epstopdf)                    size: 7831 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig/DatabaseSDIAR-eps-conve
 rted-to.pdf fig/DatabaseSDIAR.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/DatabaseSDIAR-eps-converted-to.pdf, id=129, 2884.7775pt x 805.0075pt>
+<fig/DatabaseSDIAR-eps-converted-to.pdf, id=138, 2884.7775pt x 805.0075pt>
 File: fig/DatabaseSDIAR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/DatabaseSDIAR-eps-converted-to.pdf>
@@ -684,18 +705,18 @@ Overfull \hbox (24.60236pt too wide) in paragraph at lines 42--44
  []
 
 Package epstopdf Info: Source file: <fig/ElectroFusionSDIAR.eps>
-(epstopdf)                    date: 2016-10-06 10:18:43
-(epstopdf)                    size: 60468778 bytes
+(epstopdf)                    date: 2016-10-07 11:34:18
+(epstopdf)                    size: 20452 bytes
 (epstopdf)             Output file: <fig/ElectroFusionSDIAR-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2016-10-06 10:20:27
-(epstopdf)                    size: 121186 bytes
+(epstopdf)                    date: 2016-10-07 11:34:27
+(epstopdf)                    size: 7864 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig/ElectroFusionSDIAR-eps-
 converted-to.pdf fig/ElectroFusionSDIAR.eps>
 (epstopdf)             \includegraphics on input line 88.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/ElectroFusionSDIAR-eps-converted-to.pdf, id=130, 2883.77374pt x 805.0075pt
+<fig/ElectroFusionSDIAR-eps-converted-to.pdf, id=139, 2883.77374pt x 805.0075pt
 >
 File: fig/ElectroFusionSDIAR-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/ElectroFusionSDIAR-eps-converted-to.pdf>
@@ -707,7 +728,11 @@ Overfull \hbox (24.60236pt too wide) in paragraph at lines 88--90
  [][] 
  []
 
-[9]) (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\conclusion.tex)
+[9]
+Underfull \vbox (badness 5460) has occurred while \output is active []
+
+)
+(C:\Users\laroche\Documents\GitHub\Journal_SPNMF\conclusion.tex)
 (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\appendix.tex [10 <C:/Users/lar
 oche/Documents/GitHub/Journal_SPNMF/fig/DatabaseSDIAR-eps-converted-to.pdf> <C:
 /Users/laroche/Documents/GitHub/Journal_SPNMF/fig/ElectroFusionSDIAR-eps-conver
@@ -719,38 +744,35 @@ l in-stru-ment
 
 [11]) [12
 
-] (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\SPNMF.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (C:\Users\laroche\Documents\GitHub\Journal_SPNMF\SPNMF.aux) ) 
 Here is how much of TeX's memory you used:
- 6083 strings out of 494045
- 94106 string characters out of 3148382
- 184621 words of memory out of 3000000
- 9252 multiletter control sequences out of 15000+200000
+ 6089 strings out of 494045
+ 94303 string characters out of 3148382
+ 182630 words of memory out of 3000000
+ 9257 multiletter control sequences out of 15000+200000
  39163 words of font info for 74 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  42i,13n,38p,1822b,394s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
-mbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on SPNMF.pdf (12 pages, 655910 bytes).
+{C:/Program File
+s/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
+b8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on SPNMF.pdf (12 pages, 878995 bytes).
 PDF statistics:
- 309 PDF objects out of 1000 (max. 8388607)
+ 214 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

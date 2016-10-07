@@ -56,13 +56,23 @@ Figure~\ref{regnmfcomp} show the results of the decomposition on the SiSec datab
 
 These results shows that performance of the SPNMF over the RegNMF. The constraints can successfully replaced by a PNMF term in order to extract the harmonic instruments in order to simplify the optimization process. 
 
+We display on Figure~\ref{pnmfshowcase} the decomposition results between the RegNMF and the SPNMF. We can see that the harmonic estimation of the RegNMF is not accurate and that some percussive components are present. The optimal parameters obtained on the development database are not tuned for this particular song and the RegNMF is overall less robust than the SPNMF. 
 
 \begin{figure}[t]
 
   \centering 
   \includegraphics[width=9cm]{fig/RegNMFComp}
 %  \vspace{2.0cm}
-  \caption{\label{regnmfcomp} Comparaison of the SPNMF and the Regularized NMF on the SiSec database.}
+  \caption{\label{regnmfcomp}Decomposition results for the percussive(left bar)/harmonic (right bar) decomposition of the SPNMF and the Regularized NMF on the SiSec database.}
+  
+\end{figure}
+
+\begin{figure}[t]
+
+  \centering 
+  \includegraphics[width=9cm]{fig/PNMFShowcase}
+%  \vspace{2.0cm}
+  \caption{\label{pnmfshowcase}Comparison between the ground truth, the SPNMF and the RegNMF on the SiSec database.}
   
 \end{figure}
 
@@ -108,7 +118,7 @@ For the rest of the article, we will use the SPNMF algorithm with the IS diverge
   \centering 
   \includegraphics[width=9cm]{fig/NewDictDivTest1024}
 %  \vspace{2.0cm}
-  \caption{\label{frame1024} SDR, SIR and SAR of harmonic (left bar)/percussive (right bar) estimated sources on the SiSec database with a window frame of $1024$ samples.}
+  \caption{\label{frame1024} SDR, SIR and SAR of percussive(left bar)/harmonic (right bar) estimated sources on the SiSec database with a window frame of $1024$ samples.}
   
 \end{figure}
 
@@ -118,7 +128,7 @@ For the rest of the article, we will use the SPNMF algorithm with the IS diverge
   \centering 
   \includegraphics[width=9cm]{fig/NewDictDivTest}
 %  \vspace{2.0cm}
-  \caption{\label{frame2048} SDR, SIR and SAR of harmonic (left bar)/percussive (right bar) estimated sources on the SiSec database with a window frame of $2048$ samples.}
+  \caption{\label{frame2048} SDR, SIR and SAR of percussive(left bar)/harmonic (right bar) estimated sources on the SiSec database with a window frame of $2048$ samples.}
   
 \end{figure}
 
@@ -131,8 +141,9 @@ For the rest of the article, we will use the SPNMF algorithm with the IS diverge
 %We display on Figure~\ref{resultsDict} the SDR results of the decomposition using the NMF dictionary, the STFT dictionary as well as the concatenated dictionary. The SAR and SIR are postponed in Appendix~\ref{appendix:dict} on Figures~\ref{resultsDictSAR} and~\ref{resultsDictSIR} respectively. In our tests, the results with the concatenated dictionary give the highest score. Indeed, the concatenated dictionary contains the largest amount of information and as a result, obtains the best separation. As the dictionary is fixed, it is important to have a large dictionary to be able to extract a large type of percussive instruments. The STFT and the NMF dictionaries give results similar to each other. The two dictionaries contain complementary information that allow for a better separation while they are concatenated. In the tests we will conduct later in Section~\ref{sec:stateoftheart} on a large database, we will use the concatenated dictionary as it contains the largest amount of information. 
 
 We now discuss the different methods to construct the drum dictionary. As the dictionary is fixed, it is important to find a good compromise with the size and the quantity of information contained. 
-Two types of audio recordings are available, the first type contains drum hits of the independents element of the drum kit. We concatenated the recording of the drum hits of each drummer in three $10$~min long audio signals. The other type of audio files are drum phrases. We created three signals of different length ($6$~min, $12$~min, $30$~min) for the three drummers for a total of $9$ audio signal. 
-Finally, we compute the STFT of these $12$ signals and we execute a NMF on each of the spectrograms to obtain various dictionaries. The rank of the decomposition is chosen as $k \in [6,9,12,25,50,100,200,500]$. In total, $108$ dictionaries are created. 
+Two types of audio recordings are available, the first type contains drum hits of the independents element of the drum kit. %We concatenated the recording of the drum hits of each drummer in three $10$~min long audio signals. 
+The other type of audio files are drum phrases. We created three signals of different length ($6$~min, $12$~min, $30$~min) for the three drummers for a total of $9$ audio signal. 
+Finally, we compute the STFT of these $12$ signals and we execute a NMF on each of the spectrograms to obtain various dictionaries. The rank of the decomposition is chosen as $6 \le k  \le 500$. In total, $108$ dictionaries are created. 
 
 Multiple tests are run in order to evaluate the influence of each of the parameters for the training step. The drum kit of each drummer are very different and they provide different information for the decomposition. We display on Figure~\ref{resultsDict} the mean SDR, SIR and SAR results of the average results for each drummer. Figure \ref{resultsDict} shows that the information of the drummer $2$ is the most relevant for our test. The drummer $1$ plays on a very small drum kit that does not contains enough information. Finally the drummer $3$ plays uses a large drumset with many elements that are not usually present in most recording and because of that the dictionary is too diverse.
 

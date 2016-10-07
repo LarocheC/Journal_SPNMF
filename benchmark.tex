@@ -15,7 +15,7 @@ In our test, the training database of the SPNMF and the NMPCF is only composed o
 \subsection{State of the art methods}
 \label{soth}
 
-We compare here the SPNMF with the fixed dictionary matrix to three other recent state of the art methods: constrained NMF (CoNMF)~\cite{canadas2014percussive}, MF~\cite{fitzgerald2010harmonic} and NMPCF~\cite{kim2011nonnegative}. Constrained NMF and NMPCF are re-implemented in this paper and the MF implementation is taken from~\cite{DriedgerMueller14_TSMToolbox_DAFX}.
+We compare here the SPNMF with the fixed dictionary matrix to three other recent state of the art methods: constrained NMF (CoNMF)~\cite{canadas2014percussive}, MF~\cite{fitzgerald2010harmonic} and NMPCF~\cite{kim2011nonnegative}. Constrained NMF and NMPCF are re-implemented in this paper and we used the optimal parameters recommended by the author in there respective articles. The MF implementation is taken from~\cite{DriedgerMueller14_TSMToolbox_DAFX} and we used the standard parameters for a HPSS task.
 
 MF is a state of the art, versatile and computationally efficient method. It is widely used in the Music Information Retrieval community and is a good baseline for comparison. The constrained NMF algorithm is the most recent method for harmonic/percussive separation. It gives good results on a small scale test, however the robustness of the algorithm has not been tested yet in a large scale experiment. Finally the NMPCF, similarly to our method, uses a drum dictionary to guide the percussive estimation but the harmonic part is totally unconstrained. 
 
